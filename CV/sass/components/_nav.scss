@@ -1,0 +1,55 @@
+@import "../utils/veriables";
+
+.nav {
+  display: flex;
+  flex-direction: column;
+
+  .nav__img {
+    width: 200px;
+    height: 220px;
+    border-radius: 25%;
+    margin: 25px auto;
+    animation-name: img;
+    animation-duration: 1500ms;
+  }
+
+  @keyframes img {
+    0% {
+      transform: translateX(-300px);
+    }
+
+    50% {
+      border-radius: 50%;
+      scale: (0.1);
+      rotate: 180deg;
+    }
+
+    100% {
+      rotate: 0deg;
+    }
+  }
+
+  .nav__title {
+    font-family: map-get($fonts, "primary");
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    color: map-get($colors, "second");
+    text-align: right;
+    margin-right: 15px;
+    margin-top: 15px;
+    text-transform: uppercase;
+  }
+}
+
+@media print {
+  .nav {
+    margin-left: -1000px;
+
+    .nav__title {
+      text-align: center;
+    }
+  }
+}
