@@ -1,0 +1,18 @@
+@import "../utils/veriables";
+
+.info-other__list {
+  font-family: map-get($fonts, "first");
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: map-get($colors, "first");
+  margin-top: 15px;
+}
+
+.info-skills__list,
+.info-hobby__list {
+  @extend .info-other__list;
+  margin-top: 10px;
+}

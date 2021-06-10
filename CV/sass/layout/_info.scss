@@ -1,0 +1,27 @@
+@import "../utils/veriables";
+
+.background-info {
+  background-color: map-get($colors, "second");
+
+  .info {
+    display: flex;
+    list-style: square;
+  }
+
+  .info-course,
+  .info-lang,
+  .info-other,
+  .info-skills,
+  .info-hobby{
+    display: flex;
+    flex-direction: column;
+    list-style: disc;
+    margin-top: 15px;
+    margin-left: -20px;
+  }
+
+  .info__list--skills,
+  .info__list--hobby{
+    margin-top: 20px;
+  }
+}

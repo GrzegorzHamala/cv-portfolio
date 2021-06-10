@@ -1,0 +1,57 @@
+@import "../utils/veriables";
+
+.edu__date {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: map-get($colors, "first");
+  margin-left: 20px;
+  margin-top: 38px;
+}
+
+.edu__text {
+  font-family: map-get($fonts, "primary");
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: map-get($colors, "primary");
+  text-align: center;
+  margin-top: 25px;
+  margin-left: 110px;
+}
+
+.edu__icon {
+  margin-top: 55px;
+  margin-left: -322px;
+}
+
+.edu__icon-text {
+  @extend .edu__text;
+  font-weight: 700;
+  color: map-get($colors, "first");
+  text-transform: uppercase;
+  margin-top: 63px;
+  margin-left: 5px;
+}
+
+.edu__link {
+  @extend .edu__text;
+  font-weight: 700;
+  color: map-get($colors, "first");
+  text-decoration: none;
+  margin-top: 60px;
+  margin-left: 47px;
+
+  &:hover {
+    color: map-get($colors, "hover");
+    fill: map-get($colors, "hover");
+  }
+
+  .edu__link-icon {
+    margin-right: 5px;
+  }
+}

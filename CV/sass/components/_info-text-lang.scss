@@ -1,0 +1,38 @@
+@import "../utils/veriables";
+
+.info-lang__list {
+  font-family: map-get($fonts, "first");
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: map-get($colors, "first");
+  margin-top: 20px;
+  margin-bottom: 0;
+
+  .info-lang__icon {
+    margin-left: 5px;
+    fill: map-get($colors, "block");
+  }
+
+  .info-lang__icon--ang {
+    margin-left: 135px;
+  }
+
+  .info-lang__icon--ros {
+    margin-left: 145px;
+  }
+
+  .info-lang__icon--one {
+    fill-opacity: 0.2;
+  }
+
+  .info-lang__icon-text {
+    @extend .info-lang__list;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 0;
+    margin-left: 292px;
+  }
+}

@@ -1,0 +1,16 @@
+@import "../utils/veriables";
+
+.background-edu {
+  background-color: map-get($colors, "block_2");
+  height: 100px;
+}
+
+.edu {
+  display: flex;
+}
+
+.edu__line {
+  height: 2px;
+  width: 100%;
+  background-color: map-get($colors, "first");
+}

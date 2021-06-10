@@ -1,0 +1,12 @@
+@import "../utils/veriables";
+
+.menu {
+  height: 80px;
+  border-bottom: 1px solid map-get($colors, "primary");
+  display: flex;
+  align-items: center;
+
+  .menu__icon {
+    margin-left: 50px;
+  }
+}
