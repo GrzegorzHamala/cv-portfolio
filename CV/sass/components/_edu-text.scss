@@ -8,7 +8,18 @@
   letter-spacing: 0.05em;
   color: map-get($colors, "first");
   margin-left: 20px;
-  margin-top: 38px;
+  margin-top: 35px;
+}
+
+.edu__dateTwo {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: map-get($colors, "first");
+  margin-left: -164px;
+  margin-top: 115px;
 }
 
 .edu__text {
@@ -24,9 +35,22 @@
   margin-left: 110px;
 }
 
+.edu__textTwo {
+  font-family: map-get($fonts, "primary");
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: map-get($colors, "primary");
+  text-align: center;
+  margin-top: 95px;
+  margin-left: -175px;
+}
+
 .edu__icon {
-  margin-top: 55px;
-  margin-left: -322px;
+  margin-top: 135px;
+  margin-left: -275px;
 }
 
 .edu__icon-text {
@@ -34,7 +58,7 @@
   font-weight: 700;
   color: map-get($colors, "first");
   text-transform: uppercase;
-  margin-top: 63px;
+  margin-top: 143px;
   margin-left: 5px;
 }
 
@@ -43,8 +67,9 @@
   font-weight: 700;
   color: map-get($colors, "first");
   text-decoration: none;
-  margin-top: 60px;
-  margin-left: 47px;
+  margin-top: 50px;
+  margin-left: 0;
+  margin-bottom: 90px;
 
   &:hover {
     color: map-get($colors, "hover");
@@ -52,6 +77,24 @@
   }
 
   .edu__link-icon {
+    margin-right: 5px;
+  }
+}
+
+.edu__linkTwo {
+  @extend .edu__text;
+  font-weight: 700;
+  color: map-get($colors, "first");
+  text-decoration: none;
+  margin-top: 140px;
+  margin-left: -170px;
+
+  &:hover {
+    color: map-get($colors, "hover");
+    fill: map-get($colors, "hover");
+  }
+
+  .edu__link-iconTwo {
     margin-right: 5px;
   }
 }

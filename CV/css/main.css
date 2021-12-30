@@ -157,10 +157,21 @@ body {
   letter-spacing: 0.05em;
   color: #696969;
   margin-left: 20px;
-  margin-top: 38px;
+  margin-top: 35px;
 }
 
-.edu__text, .edu__link, .edu__icon-text {
+.edu__dateTwo {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: #696969;
+  margin-left: -164px;
+  margin-top: 115px;
+}
+
+.edu__text, .edu__linkTwo, .edu__link, .edu__icon-text {
   font-family: "roboto";
   font-style: normal;
   font-weight: 500;
@@ -173,16 +184,29 @@ body {
   margin-left: 110px;
 }
 
+.edu__textTwo {
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: #303030;
+  text-align: center;
+  margin-top: 95px;
+  margin-left: -175px;
+}
+
 .edu__icon {
-  margin-top: 55px;
-  margin-left: -322px;
+  margin-top: 135px;
+  margin-left: -275px;
 }
 
 .edu__icon-text {
   font-weight: 700;
   color: #696969;
   text-transform: uppercase;
-  margin-top: 63px;
+  margin-top: 143px;
   margin-left: 5px;
 }
 
@@ -190,14 +214,30 @@ body {
   font-weight: 700;
   color: #696969;
   text-decoration: none;
-  margin-top: 60px;
-  margin-left: 47px;
+  margin-top: 50px;
+  margin-left: 0;
+  margin-bottom: 90px;
 }
 .edu__link:hover {
   color: #fc6600;
   fill: #fc6600;
 }
 .edu__link .edu__link-icon {
+  margin-right: 5px;
+}
+
+.edu__linkTwo {
+  font-weight: 700;
+  color: #696969;
+  text-decoration: none;
+  margin-top: 140px;
+  margin-left: -170px;
+}
+.edu__linkTwo:hover {
+  color: #fc6600;
+  fill: #fc6600;
+}
+.edu__linkTwo .edu__link-iconTwo {
   margin-right: 5px;
 }
 
@@ -452,7 +492,7 @@ body {
   background-color: #696969;
 }
 .background-nav .nav__line--profession {
-  margin-top: 49px;
+  margin-top: 129px;
 }
 .background-nav .nav__line--info {
   margin-top: 311px;
@@ -545,7 +585,7 @@ body {
 
 .background-edu {
   background-color: #f7f7f7;
-  height: 100px;
+  height: 180px;
 }
 
 .edu {
