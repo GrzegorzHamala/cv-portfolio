@@ -3,6 +3,7 @@
 .background-edu {
   background-color: map-get($colors, "block_2");
   height: 180px;
+  margin-top: 28px;
 }
 
 .edu {
@@ -13,4 +14,5 @@
   height: 2px;
   width: 100%;
   background-color: map-get($colors, "first");
+  margin-top: 4px;
 }

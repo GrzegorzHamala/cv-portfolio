@@ -7,7 +7,7 @@
   font-size: 20px;
   line-height: 1;
   letter-spacing: 0.05em;
-  color: map-get($colors, "primary");
+  color: map-get($colors, "block");
 }
 
 .info-course__list {
@@ -21,11 +21,11 @@
     font-family: none;
     font-weight: 600;
     font-size: 20px;
-    color: map-get($colors, "first");
+    color: map-get($colors, "date");
   }
 
   .info-course__span {
-    margin-left: 235px;
+    margin-left: 255px;
     margin-top: -30px;
     margin-bottom: 8px;
   }
@@ -47,7 +47,7 @@
   }
 
   .info-course__icon {
-    margin-left: 235px;
+    margin-left: 255px;
   }
 
   .info-course__icon-span {

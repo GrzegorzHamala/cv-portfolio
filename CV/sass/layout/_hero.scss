@@ -34,17 +34,6 @@
   }
 }
 
-.hero__line {
-  height: 2px;
-  width: 100%;
-  background-color: map-get($colors, "first");
-}
-
-.hero__line-two {
-  @extend .hero__line;
-  margin-top: 28px;
-}
-
 .hero-portfolio {
   font-family: map-get($fonts, "primary");
   font-style: normal;

@@ -36,9 +36,9 @@ body {
 }
 .nav .nav__img {
   width: 200px;
-  height: 220px;
+  height: 200px;
   border-radius: 25%;
-  margin: 25px auto;
+  margin: 35px auto;
   -webkit-animation-name: img;
           animation-name: img;
   -webkit-animation-duration: 1500ms;
@@ -77,7 +77,7 @@ body {
   font-size: 18px;
   line-height: 1;
   letter-spacing: 0.05em;
-  color: #ffffff99;
+  color: #f7f7f7;
   text-align: right;
   margin-right: 15px;
   margin-top: 15px;
@@ -86,10 +86,35 @@ body {
 
 @media print {
   .nav {
-    margin-left: -1000px;
+    margin-left: -970px;
   }
   .nav .nav__title {
     text-align: center;
+  }
+}
+.nav__link {
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  position: absolute;
+  bottom: -720px;
+  left: 20px;
+  padding: 20px 20px;
+  background-color: #fc6600;
+  text-decoration: none;
+  color: #f7f7f7;
+  border-radius: 50px;
+}
+.nav__link:hover {
+  box-shadow: 10px 10px 20px #00ff00;
+}
+
+@media print {
+  .nav__link {
+    display: none;
   }
 }
 .hero-address, .hero-tel, .hero-mail, .hero-tel .hero-address__span, .hero-mail .hero-address__span, .hero-tel .hero-tel__link, .hero-mail .hero-tel__link, .hero-mail .hero-mail__link, .hero-address .hero-address__span {
@@ -117,7 +142,7 @@ body {
   margin-top: 5px;
 }
 .hero-tel .hero-tel__icon, .hero-mail .hero-tel__icon {
-  margin-left: 185px;
+  margin-left: 195px;
   margin-right: 10px;
 }
 .hero-tel .hero-tel__link, .hero-mail .hero-tel__link, .hero-mail .hero-mail__link {
@@ -155,7 +180,7 @@ body {
   font-size: 20px;
   line-height: 1;
   letter-spacing: 0.05em;
-  color: #696969;
+  color: #234e00;
   margin-left: 20px;
   margin-top: 35px;
 }
@@ -166,8 +191,8 @@ body {
   font-size: 20px;
   line-height: 1;
   letter-spacing: 0.05em;
-  color: #696969;
-  margin-left: -164px;
+  color: #234e00;
+  margin-left: -134px;
   margin-top: 115px;
 }
 
@@ -247,7 +272,7 @@ body {
   font-size: 20px;
   line-height: 1;
   letter-spacing: 0.05em;
-  color: #22235c;
+  color: #234e00;
   margin-top: 5px;
   margin-bottom: 40px;
 }
@@ -259,6 +284,7 @@ body {
   color: #303030;
   margin-left: 78px;
   margin-top: 8px;
+  text-transform: capitalize;
 }
 
 .profession__text--two {
@@ -306,7 +332,7 @@ body {
 }
 
 .profession__icon--three {
-  margin-left: -262px;
+  margin-left: -300px;
 }
 
 .profession__icon--four {
@@ -314,13 +340,13 @@ body {
 }
 
 .info__list, .info-course__list, .info-course__list .info-course__link {
-  font-family: "open sans";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 1;
   letter-spacing: 0.05em;
-  color: #303030;
+  color: #22235c;
 }
 
 .info-course__list, .info-course__list .info-course__link {
@@ -333,10 +359,10 @@ body {
   font-family: none;
   font-weight: 600;
   font-size: 20px;
-  color: #696969;
+  color: #234e00;
 }
 .info-course__list .info-course__span {
-  margin-left: 235px;
+  margin-left: 255px;
   margin-top: -30px;
   margin-bottom: 8px;
 }
@@ -353,7 +379,7 @@ body {
   margin-right: 5px;
 }
 .info-course__list .info-course__icon {
-  margin-left: 235px;
+  margin-left: 255px;
 }
 .info-course__list .info-course__icon-span {
   text-transform: uppercase;
@@ -363,43 +389,12 @@ body {
   margin-left: 10px;
 }
 
-.info-lang__list, .info-lang__list .info-lang__icon-text {
-  font-family: "open sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1;
-  letter-spacing: 0.05em;
-  color: #696969;
-  margin-top: 20px;
-  margin-bottom: 0;
-}
-.info-lang__list .info-lang__icon {
-  margin-left: 5px;
-  fill: #22235c;
-}
-.info-lang__list .info-lang__icon--ang {
-  margin-left: 135px;
-}
-.info-lang__list .info-lang__icon--ros {
-  margin-left: 145px;
-}
-.info-lang__list .info-lang__icon--one {
-  fill-opacity: 0.2;
-}
-.info-lang__list .info-lang__icon-text {
-  font-weight: 400;
-  font-size: 12px;
-  margin-top: 0;
-  margin-left: 292px;
-}
-
 .info-other__list, .info-skills__list,
 .info-hobby__list {
-  font-family: "open sans";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1;
   letter-spacing: 0.05em;
   color: #696969;
@@ -418,14 +413,15 @@ body {
   font-size: 25px;
   line-height: 1;
   letter-spacing: 0.05em;
-  text-decoration: none;
   color: #22235c;
+  margin-top: 40px;
+  margin-left: 10px;
 }
 
 .footer-text {
+  font-family: "roboto";
   font-size: 12px;
   color: #303030;
-  margin-left: 10px;
 }
 
 .menu__text, .menu__link-two, .menu__link {
@@ -495,10 +491,10 @@ body {
   margin-top: 129px;
 }
 .background-nav .nav__line--info {
-  margin-top: 311px;
+  margin-top: 161px;
 }
 .background-nav .nav__title--info {
-  height: 735px;
+  height: 660px;
 }
 
 .title {
@@ -523,7 +519,7 @@ body {
   flex-direction: column;
 }
 .background-hero .hero__heading, .background-hero .hero__date {
-  font-family: "open sans";
+  font-family: "Montserrat";
   font-style: bold;
   font-weight: 600;
   font-size: 30px;
@@ -542,16 +538,6 @@ body {
 .background-hero .hero-link {
   display: flex;
   flex-direction: row;
-}
-
-.hero__line, .hero__line-two {
-  height: 2px;
-  width: 100%;
-  background-color: #696969;
-}
-
-.hero__line-two {
-  margin-top: 28px;
 }
 
 .hero-portfolio, .hero-fb {
@@ -586,6 +572,7 @@ body {
 .background-edu {
   background-color: #f7f7f7;
   height: 180px;
+  margin-top: 28px;
 }
 
 .edu {
@@ -596,11 +583,12 @@ body {
   height: 2px;
   width: 100%;
   background-color: #696969;
+  margin-top: 4px;
 }
 
 .backgronud-profession {
   background-color: #f7f7f7;
-  height: 380px;
+  height: 230px;
   display: flex;
 }
 .backgronud-profession .profession {
@@ -609,12 +597,6 @@ body {
 }
 .backgronud-profession .profession__list {
   display: flex;
-}
-
-.profession__line {
-  height: 2px;
-  width: 100%;
-  background-color: #696969;
 }
 
 .background-info {

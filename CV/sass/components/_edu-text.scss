@@ -6,7 +6,7 @@
   font-size: 20px;
   line-height: 1;
   letter-spacing: 0.05em;
-  color: map-get($colors, "first");
+  color: map-get($colors, "date");
   margin-left: 20px;
   margin-top: 35px;
 }
@@ -17,8 +17,8 @@
   font-size: 20px;
   line-height: 1;
   letter-spacing: 0.05em;
-  color: map-get($colors, "first");
-  margin-left: -164px;
+  color: map-get($colors, "date");
+  margin-left: -134px;
   margin-top: 115px;
 }
 

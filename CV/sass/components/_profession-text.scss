@@ -6,7 +6,7 @@
   font-size: 20px;
   line-height: 1;
   letter-spacing: 0.05em;
-  color: map-get($colors, "block");
+  color: map-get($colors, "date");
   margin-top: 5px;
   margin-bottom: 40px;
 }
@@ -19,6 +19,7 @@
   color: map-get($colors, "primary");
   margin-left: 78px;
   margin-top: 8px;
+  text-transform: capitalize;
 }
 
 .profession__text--two {
@@ -70,7 +71,7 @@
 }
 
 .profession__icon--three {
-  margin-left: -262px;
+  margin-left: -300px;
 }
 
 .profession__icon--four{

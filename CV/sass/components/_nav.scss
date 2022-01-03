@@ -6,9 +6,9 @@
 
   .nav__img {
     width: 200px;
-    height: 220px;
+    height: 200px;
     border-radius: 25%;
-    margin: 25px auto;
+    margin: 35px auto;
     animation-name: img;
     animation-duration: 1500ms;
   }
@@ -36,7 +36,7 @@
     font-size: 18px;
     line-height: 1;
     letter-spacing: 0.05em;
-    color: map-get($colors, "second");
+    color: map-get($colors, "block_2");
     text-align: right;
     margin-right: 15px;
     margin-top: 15px;
@@ -46,10 +46,37 @@
 
 @media print {
   .nav {
-    margin-left: -1000px;
+    margin-left: -970px;
 
     .nav__title {
       text-align: center;
     }
+  }
+}
+
+.nav__link {
+  font-family: map-get($fonts, "primary");
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  position: absolute;
+  bottom: -720px;
+  left: 20px;
+  padding: 20px 20px;
+  background-color: map-get($colors, "hover");
+  text-decoration: none;
+  color: map-get($colors, "block_2");
+  border-radius: 50px;
+
+  &:hover {
+    box-shadow: 10px 10px 20px #00ff00;
+  }
+}
+
+@media print {
+  .nav__link {
+    display: none;
   }
 }

@@ -2,7 +2,7 @@
 
 .backgronud-profession {
   background-color: map-get($colors, "block_2");
-  height: 380px;
+  height: 230px;
   display: flex;
 
   .profession {
@@ -13,10 +13,4 @@
   .profession__list {
     display: flex;
   }
-}
-
-.profession__line {
-  height: 2px;
-  width: 100%;
-  background-color: map-get($colors, "first");
 }
