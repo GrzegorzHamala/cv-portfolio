@@ -41,8 +41,12 @@ body {
   margin: 35px auto;
   -webkit-animation-name: img;
           animation-name: img;
-  -webkit-animation-duration: 1500ms;
-          animation-duration: 1500ms;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+.nav .nav__img:hover {
+  -webkit-animation: swing 1s;
+          animation: swing 1s;
 }
 @-webkit-keyframes img {
   0% {
@@ -110,6 +114,8 @@ body {
 }
 .nav__link:hover {
   box-shadow: 10px 10px 20px #00ff00;
+  -webkit-animation: heartBeat 1s;
+          animation: heartBeat 1s;
 }
 
 @media print {
@@ -475,6 +481,11 @@ body {
 
 .img__icon {
   margin-left: 10px;
+}
+
+.gallery__image {
+  width: 370px;
+  height: 150px;
 }
 
 .background-nav {
