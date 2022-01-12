@@ -37,34 +37,3 @@ function selectImage(event) {
 }
 
 createGallery(galleryItems);
-
-// import { galleryItems } from "./gallery-items";
-
-// export function PortfolioUp(event) {
-//   for (let image of galleryItems) {
-//     const instance = document.querySelector("#Portfolio").src = `${image.original}`;
-
-//      if (event.target.src === image.preview) {
-//        instance.show();
-//      }
-//   }
-// }
-
-// export function PortfolioOut() {
-//   document.querySelector("#Portfolio").src =
-//     "./../images/img/portfolio-img.jpg";
-//   document.querySelector("#Portfolio").style = "position: none";
-// }
-
-// function BanerUp() {
-//   document.querySelector("#Baner").src = "./../images/img/baner.jpg";
-//   document.querySelector("#Baner").style =
-//     "position: absolute; background-color: #000000";
-//   document.querySelector("body").style = "background-color: #00000099";
-// }
-
-// function BanerOut() {
-//   document.querySelector("#Baner").src = "./../images/img/baner-img.jpg";
-//   document.querySelector("#Baner").style = "position: none";
-//   document.querySelector("body").style = "background-color: none";
-// }

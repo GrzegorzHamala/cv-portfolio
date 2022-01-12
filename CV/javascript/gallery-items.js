@@ -17,4 +17,22 @@ export const galleryItems = [
     original: "./../images/img/zegarek.jpg",
     description: "Zegarek",
   },
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2022/01/11/19/53/19-53-21-760_960_720.jpg",
+    original: "./../images/img/kubek.jpg",
+    description: "Kubek",
+  },
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2016/09/01/19/53/pocket-watch-1637394_960_720.jp",
+    original: "./../images/img/kubek_2.jpg",
+    description: "KubekTwo",
+  },
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2016/09/01/19/53/pocket-watch-1637394_960_720.jp",
+    original: "./../images/img/dlugi.jpg",
+    description: "Długi Dziewczyna",
+  },
 ];
