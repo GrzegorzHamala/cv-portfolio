@@ -460,13 +460,13 @@ body {
 .img {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 90px;
+  margin-left: 85px;
   margin-bottom: 35px;
   margin-top: 10px;
 }
 .img img {
-  margin-right: 25px;
-  margin-top: 25px;
+  margin-right: 20px;
+  margin-top: 30px;
 }
 
 .img__text {
@@ -481,11 +481,6 @@ body {
 
 .img__icon {
   margin-left: 10px;
-}
-
-.gallery__image {
-  width: 370px;
-  height: 200px;
 }
 
 .background-nav {
