@@ -3,11 +3,6 @@
 .background-hero {
   background-color: map-get($colors, "second");
 
-  .hero {
-    display: flex;
-    flex-direction: column;
-  }
-
   .hero__heading {
     font-family: map-get($fonts, "first");
     font-style: bold;
@@ -57,12 +52,89 @@
   }
 }
 
-.hero-fb {
+.hero-gh {
   @extend .hero-portfolio;
   margin-left: 175px;
 
-  .hero-fb__icon {
+  .hero-gh__icon {
     margin-right: 10px;
     margin-top: -4px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .hero {
+    display: none;
+  }
+
+  .heroMenu-link {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .heroMenu__heading {
+    font-family: map-get($fonts, "first");
+    font-style: bold;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    color: map-get($colors, "primary");
+    margin: -10px 0 0 10px;
+  }
+
+  .heroMenu__date {
+    @extend .heroMenu__heading;
+    font-style: italic;
+    font-size: 15px;
+    color: map-get($colors, "first");
+    margin: 0 0 15px 25px;
+  }
+
+  .heroMenu-portfolio {
+    font-family: map-get($fonts, "primary");
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    color: map-get($colors, "first");
+    margin-top: 20px;
+    display: flex;
+
+    &:hover {
+      color: map-get($colors, "hover");
+    }
+
+    .heroMenu-portfolio__icon {
+      margin-left: 15px;
+      margin-right: 10px;
+      margin-top: -5px;
+    }
+  }
+
+  .heroMenu-gh {
+    @extend .heroMenu-portfolio;
+    margin-left: 70px;
+
+    .heroMenu-gh__icon {
+      margin-right: 10px;
+      margin-top: -4px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
   }
 }

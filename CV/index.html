@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;500;700;900&family=Montserrat&display=swap"
       rel="stylesheet"
     />
-     <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     />
@@ -21,13 +21,114 @@
       <div class="container">
         <div class="nav">
           <img class="nav__img" src="images/img/myImg.jpg" alt="Image Person" />
+          <button class="nav__button" data-menu-open>
+            <svg width="20px" height="20px">
+              <use href="images/img_vector/icon.svg#icon-arrow"></use>
+            </svg>
+          </button>
+          <div class="nav__backdrop is-hidden-menu" data-menu>
+            <div class="okno-menu">
+              <button class="okno-menu__button-close" data-menu-close>
+                <svg width="20px" height="20px">
+                  <use href="images/img_vector/icon.svg#icon-button"></use>
+                </svg>
+              </button>
+              <div class="heroMenu">
+            <h1 class="heroMenu__heading">Grzegorz Hamala</h1>
+            <datetime class="heroMenu__date">30-12-1996 Rzeszów</datetime>
+            <address class="heroMenu-address">
+              Adres:
+              <svg class="heroMenu-address__icon" width="20" height="20">
+                <use href="images/img_vector/icon.svg#icon-map"></use>
+              </svg>
+              <span class="heroMenu-address__span">
+                Paszczyna 1B, 39-207 Brzeźnica</span
+              >
+            </address>
+            <p class="heroMenu-tel">
+              Phone:
+              <a class="heroMenu-tel__link" href="tel:788717749">
+                <svg class="heroMenu-tel__icon" width="20" height="20">
+                  <use href="images/img_vector/icon.svg#icon-tel"></use></svg
+                >+48788717749
+              </a>
+            </p>
+            <p class="heroMenu-mail">
+              E-mail:
+              <a class="heroMenu-mail__link" href="mailto:grzegorz.h20@gmail.com">
+                <svg class="heroMenu-mail__icon" width="20" height="20">
+                  <use href="images/img_vector/icon.svg#icon-mail"></use></svg
+                >grzegorz.h20@gmail.com
+              </a>
+            </p>
+            <div class="heroMenu-link">
+              <a class="heroMenu-portfolio" href="portfolio.html">
+                <svg class="heroMenu-portfolio__icon" width="20" height="20">
+                  <use
+                    href="images/img_vector/icon.svg#icon-portfolio"
+                  ></use></svg
+                >Portfolio
+              </a>
+              <a class="heroMenu-gh" href="https://github.com/GrzegorzHamala">
+                <svg class="heroMenu-gh__icon" width="20" height="20">
+                  <use href="images/img_vector/icon.svg#icon-github"></use></svg
+                >@ghamala
+              </a>
+            </div>
+          </div>
+            </div>
+          </div>
           <div class="nav__line"></div>
           <p class="nav__title">Education</p>
           <div class="nav__line nav__line--profession"></div>
+          <button class="navEdu__button" data-menu-open>
+            <svg width="20px" height="20px">
+              <use href="images/img_vector/icon.svg#icon-arrow"></use>
+            </svg>
+          </button>
+          <div class="nav__backdrop is-hidden-menu" data-menu>
+            <div class="okno-menu">
+              <button class="okno-menu__button-close" data-menu-close>
+                <svg width="20px" height="20px">
+                  <use href="images/img_vector/icon.svg#icon-button"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
           <p class="nav__title">Employment<br />history</p>
           <div class="nav__line nav__line--info"></div>
+          <button class="navEmployment__button" data-menu-open>
+            <svg width="20px" height="20px">
+              <use href="images/img_vector/icon.svg#icon-arrow"></use>
+            </svg>
+          </button>
+          <div class="nav__backdrop is-hidden-menu" data-menu>
+            <div class="okno-menu">
+              <button class="okno-menu__button-close" data-menu-close>
+                <svg width="20px" height="20px">
+                  <use href="images/img_vector/icon.svg#icon-button"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
           <p class="nav__title nav__title--info">Additional<br />information</p>
-          <a class="nav__link" href="./Curriculum Vitae.pdf" download>Download Resume</a>
+          <button class="navInfo__button" data-menu-open>
+            <svg width="20px" height="20px">
+              <use href="images/img_vector/icon.svg#icon-arrow"></use>
+            </svg>
+          </button>
+          <div class="nav__backdrop is-hidden-menu" data-menu>
+            <div class="okno-menu">
+              <button class="okno-menu__button-close" data-menu-close>
+                <svg width="20px" height="20px">
+                  <use href="images/img_vector/icon.svg#icon-button"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <a class="nav__link" href="./Curriculum Vitae.pdf" download
+            >Download Resume</a
+          >
         </div>
       </div>
     </header>
@@ -71,8 +172,8 @@
                   ></use></svg
                 >Portfolio
               </a>
-              <a class="hero-fb" href="https://github.com/GrzegorzHamala">
-                <svg class="hero-fb__icon" width="20" height="20">
+              <a class="hero-gh" href="https://github.com/GrzegorzHamala">
+                <svg class="hero-gh__icon" width="20" height="20">
                   <use href="images/img_vector/icon.svg#icon-github"></use></svg
                 >@ghamala
               </a>
@@ -248,5 +349,6 @@
         </span>
       </p>
     </footer>
+    <script src="javascript/menu.js"></script>
   </body>
 </html>

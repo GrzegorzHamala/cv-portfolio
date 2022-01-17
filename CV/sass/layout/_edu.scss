@@ -16,3 +16,17 @@
   background-color: map-get($colors, "first");
   margin-top: 4px;
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .edu{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+  
+}

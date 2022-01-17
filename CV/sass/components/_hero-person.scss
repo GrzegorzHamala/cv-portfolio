@@ -10,7 +10,6 @@
   color: map-get($colors, "primary");
   margin-top: 20px;
   margin-left: 20px;
-  
 
   .hero-address__span {
     @extend .hero-address;
@@ -69,4 +68,80 @@
       fill: map-get($colors, "hover");
     }
   }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .heroMenu-address {
+    font-family: map-get($fonts, "primary");
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    color: map-get($colors, "primary");
+    margin-top: 20px;
+    margin-left: 10px;
+
+    .heroMenu-address__span {
+      @extend .heroMenu-address;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 16px;
+      margin-left: 5px;
+    }
+
+    .heroMenu-address__icon {
+      margin-left: 5px;
+    }
+  }
+
+  .heroMenu-tel {
+    @extend .heroMenu-address;
+    margin-top: 20px;
+
+    .heroMenu-tel__icon {
+      margin-right: 10px;
+    }
+
+    .heroMenu-tel__link {
+      @extend .heroMenu-address__span;
+      font-style: normal;
+      text-decoration: none;
+
+      &:hover {
+        font-weight: 700;
+        font-size: 18px;
+        color: map-get($colors, "hover");
+        fill: map-get($colors, "hover");
+      }
+    }
+  }
+
+  .heroMenu-mail {
+    @extend .heroMenu-tel;
+    margin-top: 10px;
+
+    .heroMenu-mail__icon {
+      margin-right: 10px;
+    }
+
+    .heroMenu-mail__link {
+      @extend .heroMenu-tel__link;
+      font-style: normal;
+      text-decoration: none;
+
+      &:hover {
+        font-weight: 700;
+        font-size: 18px;
+        color: map-get($colors, "hover");
+        fill: map-get($colors, "hover");
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+}
+
+@media screen and (min-width: 1200px) {
 }

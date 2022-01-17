@@ -9,6 +9,30 @@ body {
   align-items: center;
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .container {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
 @media print {
   .container {
     width: 1200px;
@@ -19,7 +43,7 @@ body {
 .hero-tel__link:hover,
 .hero-mail__link:hover,
 .hero-portfolio:hover,
-.hero-fb:hover,
+.hero-gh:hover,
 .edu__link:hover,
 .profession__link:hover,
 .info-course__link:hover,
@@ -78,24 +102,17 @@ body {
   font-family: "roboto";
   font-style: normal;
   font-weight: 900;
-  font-size: 18px;
   line-height: 1;
   letter-spacing: 0.05em;
   color: #f7f7f7;
-  text-align: right;
   margin-right: 15px;
   margin-top: 15px;
   text-transform: uppercase;
 }
-
-@media print {
-  .nav {
-    margin-left: -970px;
-  }
-  .nav .nav__title {
-    text-align: center;
-  }
+.nav .nav__title--info {
+  height: 660px;
 }
+
 .nav__link {
   font-family: "roboto";
   font-style: normal;
@@ -121,6 +138,35 @@ body {
 @media print {
   .nav__link {
     display: none;
+  }
+
+  .nav {
+    margin-left: -970px;
+  }
+  .nav .nav__title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .nav__title {
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .nav__link {
+    position: absolute;
+    bottom: -250px;
+    left: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav__title {
+    text-align: right;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__title {
+    text-align: right;
   }
 }
 .hero-address, .hero-tel, .hero-mail, .hero-tel .hero-address__span, .hero-mail .hero-address__span, .hero-tel .hero-tel__link, .hero-mail .hero-tel__link, .hero-mail .hero-mail__link, .hero-address .hero-address__span {
@@ -180,6 +226,62 @@ body {
   fill: #fc6600;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .heroMenu-address, .heroMenu-tel, .heroMenu-mail, .heroMenu-tel .heroMenu-address__span, .heroMenu-mail .heroMenu-address__span, .heroMenu-tel .heroMenu-tel__link, .heroMenu-mail .heroMenu-tel__link, .heroMenu-mail .heroMenu-mail__link, .heroMenu-address .heroMenu-address__span {
+    font-family: "roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    color: #303030;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .heroMenu-address .heroMenu-address__span, .heroMenu-tel .heroMenu-address__span, .heroMenu-mail .heroMenu-address__span, .heroMenu-tel .heroMenu-tel__link, .heroMenu-mail .heroMenu-tel__link, .heroMenu-mail .heroMenu-mail__link {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 5px;
+  }
+  .heroMenu-address .heroMenu-address__icon, .heroMenu-tel .heroMenu-address__icon, .heroMenu-mail .heroMenu-address__icon {
+    margin-left: 5px;
+  }
+
+  .heroMenu-tel, .heroMenu-mail {
+    margin-top: 20px;
+  }
+  .heroMenu-tel .heroMenu-tel__icon, .heroMenu-mail .heroMenu-tel__icon {
+    margin-right: 10px;
+  }
+  .heroMenu-tel .heroMenu-tel__link, .heroMenu-mail .heroMenu-tel__link, .heroMenu-mail .heroMenu-mail__link {
+    font-style: normal;
+    text-decoration: none;
+  }
+  .heroMenu-tel .heroMenu-tel__link:hover, .heroMenu-mail .heroMenu-tel__link:hover, .heroMenu-mail .heroMenu-mail__link:hover {
+    font-weight: 700;
+    font-size: 18px;
+    color: #fc6600;
+    fill: #fc6600;
+  }
+
+  .heroMenu-mail {
+    margin-top: 10px;
+  }
+  .heroMenu-mail .heroMenu-mail__icon {
+    margin-right: 10px;
+  }
+  .heroMenu-mail .heroMenu-mail__link {
+    font-style: normal;
+    text-decoration: none;
+  }
+  .heroMenu-mail .heroMenu-mail__link:hover {
+    font-weight: 700;
+    font-size: 18px;
+    color: #fc6600;
+    fill: #fc6600;
+  }
+}
 .edu__date {
   font-style: normal;
   font-weight: 600;
@@ -430,6 +532,11 @@ body {
   color: #303030;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer {
+    display: none;
+  }
+}
 .menu__text, .menu__link-two, .menu__link {
   font-family: "roboto";
   font-style: normal;
@@ -499,9 +606,6 @@ body {
 .background-nav .nav__line--info {
   margin-top: 161px;
 }
-.background-nav .nav__title--info {
-  height: 660px;
-}
 
 .title {
   font-family: "roboto";
@@ -517,12 +621,120 @@ body {
   right: 15px;
 }
 
+.nav__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000033;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+
+.is-hidden-menu {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(0.1);
+}
+
+.okno-menu {
+  background-color: #f7f7f7;
+  border-radius: 4px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: column;
+  height: 320px;
+}
+
+.is-hidden-menu .okno-menu {
+  -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+          clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.okno-menu__button-close {
+  width: 30px;
+  height: 30px;
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  border: 1px solid #0000001a;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-right: 8px;
+}
+.okno-menu__button-close:focus, .okno-menu__button-close:hover {
+  cursor: pointer;
+  fill: #fc6600;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .background-nav {
+    background-color: #22235c;
+    width: 320px;
+    height: 800px;
+    float: left;
+    margin-top: -30px;
+    margin-bottom: -100px;
+  }
+  .background-nav .nav__line--profession,
+.background-nav .nav__line--info {
+    margin-top: 50px;
+  }
+
+  .nav__button,
+.navEdu__button,
+.navEmployment__button,
+.navInfo__button {
+    display: flex;
+    margin: -20px 0 20px 265px;
+    width: 45px;
+    background-color: transparent;
+    fill: #ffffff;
+    border: 1px solid #ffffff;
+  }
+
+  .navEdu__button,
+.navEmployment__button {
+    margin-top: -40px;
+  }
+
+  .navInfo__button {
+    margin-top: -600px;
+  }
+
+  .title {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav__button,
+.navEdu__button,
+.navEmployment__button,
+.navInfo__button {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__button,
+.navEdu__button,
+.navEmployment__button,
+.navInfo__button {
+    display: none;
+  }
+}
 .background-hero {
   background-color: #ffffff99;
-}
-.background-hero .hero {
-  display: flex;
-  flex-direction: column;
 }
 .background-hero .hero__heading, .background-hero .hero__date {
   font-family: "Montserrat";
@@ -546,7 +758,7 @@ body {
   flex-direction: row;
 }
 
-.hero-portfolio, .hero-fb {
+.hero-portfolio, .hero-gh {
   font-family: "roboto";
   font-style: normal;
   font-weight: 600;
@@ -558,23 +770,92 @@ body {
   margin-top: 30px;
   display: flex;
 }
-.hero-portfolio:hover, .hero-fb:hover {
+.hero-portfolio:hover, .hero-gh:hover {
   color: #fc6600;
 }
-.hero-portfolio .hero-portfolio__icon, .hero-fb .hero-portfolio__icon {
+.hero-portfolio .hero-portfolio__icon, .hero-gh .hero-portfolio__icon {
   margin-left: 25px;
   margin-right: 10px;
   margin-top: -5px;
 }
 
-.hero-fb {
+.hero-gh {
   margin-left: 175px;
 }
-.hero-fb .hero-fb__icon {
+.hero-gh .hero-gh__icon {
   margin-right: 10px;
   margin-top: -4px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .hero {
+    display: none;
+  }
+
+  .heroMenu-link {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .heroMenu__heading, .heroMenu__date {
+    font-family: "Montserrat";
+    font-style: bold;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    color: #303030;
+    margin: -10px 0 0 10px;
+  }
+
+  .heroMenu__date {
+    font-style: italic;
+    font-size: 15px;
+    color: #696969;
+    margin: 0 0 15px 25px;
+  }
+
+  .heroMenu-portfolio, .heroMenu-gh {
+    font-family: "roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    color: #696969;
+    margin-top: 20px;
+    display: flex;
+  }
+  .heroMenu-portfolio:hover, .heroMenu-gh:hover {
+    color: #fc6600;
+  }
+  .heroMenu-portfolio .heroMenu-portfolio__icon, .heroMenu-gh .heroMenu-portfolio__icon {
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: -5px;
+  }
+
+  .heroMenu-gh {
+    margin-left: 70px;
+  }
+  .heroMenu-gh .heroMenu-gh__icon {
+    margin-right: 10px;
+    margin-top: -4px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .background-edu {
   background-color: #f7f7f7;
   height: 180px;
@@ -592,6 +873,11 @@ body {
   margin-top: 4px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .edu {
+    display: none;
+  }
+}
 .backgronud-profession {
   background-color: #f7f7f7;
   height: 230px;
@@ -605,6 +891,11 @@ body {
   display: flex;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .profession {
+    display: none;
+  }
+}
 .background-info {
   background-color: #ffffff99;
 }
@@ -628,6 +919,11 @@ body {
   margin-top: 20px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .info__list, .info-course__list, .info-course__list .info-course__link {
+    display: none;
+  }
+}
 .menu {
   height: 80px;
   border-bottom: 1px solid #303030;
