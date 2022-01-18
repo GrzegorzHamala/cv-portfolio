@@ -1,6 +1,7 @@
 @import "../utils/veriables";
 
-.edu__date {
+.edu__date,
+.eduMenu__date {
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -11,7 +12,8 @@
   margin-top: 35px;
 }
 
-.edu__dateTwo {
+.edu__dateTwo,
+.eduMenu__dateTwo {
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -22,7 +24,8 @@
   margin-top: 115px;
 }
 
-.edu__text {
+.edu__text,
+.eduMenu__text {
   font-family: map-get($fonts, "primary");
   font-style: normal;
   font-weight: 500;
@@ -35,7 +38,8 @@
   margin-left: 110px;
 }
 
-.edu__textTwo {
+.edu__textTwo,
+.eduMenu__textTwo {
   font-family: map-get($fonts, "primary");
   font-style: normal;
   font-weight: 500;
@@ -53,7 +57,8 @@
   margin-left: -275px;
 }
 
-.edu__icon-text {
+.edu__icon-text,
+.eduMenu__icon-text {
   @extend .edu__text;
   font-weight: 700;
   color: map-get($colors, "first");
@@ -62,7 +67,8 @@
   margin-left: 5px;
 }
 
-.edu__link {
+.edu__link,
+.eduMenu__link {
   @extend .edu__text;
   font-weight: 700;
   color: map-get($colors, "first");
@@ -76,12 +82,14 @@
     fill: map-get($colors, "hover");
   }
 
-  .edu__link-icon {
+  .edu__link-icon,
+  .eduMenu__link-icon {
     margin-right: 5px;
   }
 }
 
-.edu__linkTwo {
+.edu__linkTwo,
+.eduMenu__linkTwo {
   @extend .edu__text;
   font-weight: 700;
   color: map-get($colors, "first");
@@ -94,7 +102,45 @@
     fill: map-get($colors, "hover");
   }
 
-  .edu__link-iconTwo {
+  .edu__link-iconTwo,
+  .eduMenu__link-iconTwo {
     margin-right: 5px;
   }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .eduMenu__date {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .eduMenu__dateTwo {
+    font-size: 24px;
+    margin-left: 0;
+  }
+
+  .eduMenu__text {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 2px;
+  }
+
+  .eduMenu__textTwo {
+    margin-top: 15px;
+    margin-left: -10px;
+  }
+
+  .eduMenu__linkTwo {
+    margin-left: 20px;
+  }
+
+  .eduParagraph{
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+}
+
+@media screen and (min-width: 1200px) {
 }

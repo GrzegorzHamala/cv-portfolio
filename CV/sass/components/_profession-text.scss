@@ -1,6 +1,7 @@
 @import "../utils/veriables";
 
-.profession__date {
+.profession__date,
+.professionMenu__date {
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -11,7 +12,8 @@
   margin-bottom: 40px;
 }
 
-.profession__text {
+.profession__text,
+.professionMenu__text {
   @extend .profession__date;
   font-family: map-get($fonts, "primary");
   font-weight: 500;
@@ -37,7 +39,8 @@
   margin-left: -404px;
 }
 
-.profession__icon-text {
+.profession__icon-text,
+.professionMenu__icon-text {
   @extend .profession__text;
   font-weight: 700;
   font-size: 14px;
@@ -47,7 +50,8 @@
   margin-left: 5px;
 }
 
-.profession__link {
+.profession__link,
+.professionMenu__link {
   @extend .profession__text;
   font-weight: 700;
   font-size: 14px;
@@ -55,13 +59,15 @@
   text-decoration: none;
   margin-top: 22px;
   margin-left: 65px;
+  margin-bottom: 50px;
 
   &:hover {
     color: map-get($colors, "hover");
     fill: map-get($colors, "hover");
   }
 
-  .profession__link-icon {
+  .profession__link-icon,
+  .professionMenu__link-icon {
     margin-right: 5px;
   }
 }
@@ -74,6 +80,22 @@
   margin-left: -300px;
 }
 
-.profession__icon--four{
+.profession__icon--four {
   margin-left: -302px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .professionMenu__text {
+    margin: 10px 0 20px -8px;
+  }
+
+  .professionMenu__link {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+}
+
+@media screen and (min-width: 1200px) {
 }

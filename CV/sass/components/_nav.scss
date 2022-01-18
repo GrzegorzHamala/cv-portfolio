@@ -44,10 +44,6 @@
     margin-top: 15px;
     text-transform: uppercase;
   }
-
-  .nav__title--info {
-    height: 660px;
-  }
 }
 
 .nav__link {
@@ -57,9 +53,6 @@
   font-size: 16px;
   line-height: 1;
   letter-spacing: 0.05em;
-  position: absolute;
-  bottom: -720px;
-  left: 20px;
   padding: 20px 20px;
   background-color: map-get($colors, "hover");
   text-decoration: none;
@@ -95,7 +88,11 @@
   .nav__link {
     position: absolute;
     bottom: -250px;
-    left: 20px;
+    left: 30px;
+  }
+
+  .nav__title--info {
+    height: 100px;
   }
 }
 
@@ -103,10 +100,30 @@
   .nav__title {
     text-align: right;
   }
+
+  .nav__title--info {
+    height: 660px;
+  }
+
+  .nav__link {
+    position: absolute;
+    bottom: -720px;
+    left: 20px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .nav__title {
     text-align: right;
+  }
+
+  .nav__title--info {
+    height: 660px;
+  }
+
+  .nav__link {
+    position: absolute;
+    bottom: -720px;
+    left: 20px;
   }
 }

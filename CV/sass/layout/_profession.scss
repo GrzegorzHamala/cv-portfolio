@@ -5,19 +5,30 @@
   height: 230px;
   display: flex;
 
-  .profession {
+  .profession{
     list-style: none;
     margin-left: -20px;
   }
 
-  .profession__list {
+  .profession__list,
+  .professionMenu__list {
     display: flex;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .profession{
+  .profession,
+  .backgronud-profession{
     display: none;
+  }
+
+  .professionMenu{
+    list-style: none;
+    margin: -12px 0 0 -20px;
+  }
+
+  .professionMenu__list{
+    margin-top: 20px;
   }
 }
 

@@ -21,111 +21,282 @@
       <div class="container">
         <div class="nav">
           <img class="nav__img" src="images/img/myImg.jpg" alt="Image Person" />
-          <button class="nav__button" data-menu-open>
+
+      <!--!!! MENU @MEDIA(320px) !!!-->
+          <button class="nav__button" data-nav-open>
             <svg width="20px" height="20px">
               <use href="images/img_vector/icon.svg#icon-arrow"></use>
             </svg>
           </button>
-          <div class="nav__backdrop is-hidden-menu" data-menu>
-            <div class="okno-menu">
-              <button class="okno-menu__button-close" data-menu-close>
+          <div class="nav__backdrop is-hidden-nav" data-nav>
+            <div class="okno">
+              <button class="okno__button-close" data-nav-close>
                 <svg width="20px" height="20px">
                   <use href="images/img_vector/icon.svg#icon-button"></use>
                 </svg>
               </button>
               <div class="heroMenu">
-            <h1 class="heroMenu__heading">Grzegorz Hamala</h1>
-            <datetime class="heroMenu__date">30-12-1996 Rzeszów</datetime>
-            <address class="heroMenu-address">
-              Adres:
-              <svg class="heroMenu-address__icon" width="20" height="20">
-                <use href="images/img_vector/icon.svg#icon-map"></use>
-              </svg>
-              <span class="heroMenu-address__span">
-                Paszczyna 1B, 39-207 Brzeźnica</span
-              >
-            </address>
-            <p class="heroMenu-tel">
-              Phone:
-              <a class="heroMenu-tel__link" href="tel:788717749">
-                <svg class="heroMenu-tel__icon" width="20" height="20">
-                  <use href="images/img_vector/icon.svg#icon-tel"></use></svg
-                >+48788717749
-              </a>
-            </p>
-            <p class="heroMenu-mail">
-              E-mail:
-              <a class="heroMenu-mail__link" href="mailto:grzegorz.h20@gmail.com">
-                <svg class="heroMenu-mail__icon" width="20" height="20">
-                  <use href="images/img_vector/icon.svg#icon-mail"></use></svg
-                >grzegorz.h20@gmail.com
-              </a>
-            </p>
-            <div class="heroMenu-link">
-              <a class="heroMenu-portfolio" href="portfolio.html">
-                <svg class="heroMenu-portfolio__icon" width="20" height="20">
-                  <use
-                    href="images/img_vector/icon.svg#icon-portfolio"
-                  ></use></svg
-                >Portfolio
-              </a>
-              <a class="heroMenu-gh" href="https://github.com/GrzegorzHamala">
-                <svg class="heroMenu-gh__icon" width="20" height="20">
-                  <use href="images/img_vector/icon.svg#icon-github"></use></svg
-                >@ghamala
-              </a>
-            </div>
-          </div>
+                <h1 class="heroMenu__heading">Grzegorz Hamala</h1>
+                <datetime class="heroMenu__date">30-12-1996 Rzeszów</datetime>
+                <address class="heroMenu-address">
+                  Adres:
+                  <svg class="heroMenu-address__icon" width="20" height="20">
+                    <use href="images/img_vector/icon.svg#icon-map"></use>
+                  </svg>
+                  <span class="heroMenu-address__span">
+                    Paszczyna 1B, 39-207 Brzeźnica</span
+                  >
+                </address>
+                <p class="heroMenu-tel">
+                  Phone:
+                  <a class="heroMenu-tel__link" href="tel:788717749">
+                    <svg class="heroMenu-tel__icon" width="20" height="20">
+                      <use
+                        href="images/img_vector/icon.svg#icon-tel"
+                      ></use></svg
+                    >+48788717749
+                  </a>
+                </p>
+                <p class="heroMenu-mail">
+                  E-mail:
+                  <a
+                    class="heroMenu-mail__link"
+                    href="mailto:grzegorz.h20@gmail.com"
+                  >
+                    <svg class="heroMenu-mail__icon" width="20" height="20">
+                      <use
+                        href="images/img_vector/icon.svg#icon-mail"
+                      ></use></svg
+                    >grzegorz.h20@gmail.com
+                  </a>
+                </p>
+                <div class="heroMenu-link">
+                  <a class="heroMenu-portfolio" href="portfolio.html">
+                    <svg
+                      class="heroMenu-portfolio__icon"
+                      width="20"
+                      height="20"
+                    >
+                      <use
+                        href="images/img_vector/icon.svg#icon-portfolio"
+                      ></use></svg
+                    >Portfolio
+                  </a>
+                  <a
+                    class="heroMenu-gh"
+                    href="https://github.com/GrzegorzHamala"
+                  >
+                    <svg class="heroMenu-gh__icon" width="20" height="20">
+                      <use
+                        href="images/img_vector/icon.svg#icon-github"
+                      ></use></svg
+                    >@ghamala
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
           <div class="nav__line"></div>
           <p class="nav__title">Education</p>
           <div class="nav__line nav__line--profession"></div>
-          <button class="navEdu__button" data-menu-open>
+          <button class="navEdu__button" data-navEdu-open>
             <svg width="20px" height="20px">
               <use href="images/img_vector/icon.svg#icon-arrow"></use>
             </svg>
           </button>
-          <div class="nav__backdrop is-hidden-menu" data-menu>
-            <div class="okno-menu">
-              <button class="okno-menu__button-close" data-menu-close>
+          <div class="nav__backdrop is-hidden-navEdu" data-navEdu>
+            <div class="okno">
+              <button class="okno__button-close" data-navEdu-close>
                 <svg width="20px" height="20px">
                   <use href="images/img_vector/icon.svg#icon-button"></use>
                 </svg>
               </button>
+              <div class="eduMenu">
+                <datetime class="eduMenu__date">03.2021 - Now</datetime>
+                <p class="eduMenu__text">
+                  Course: Programista FULL-STACK od zera
+                </p>
+                <a class="eduMenu__link" href="https://goit.global/pl/">
+                  <svg class="eduMenu__link-icon" width="14" height="14">
+                    <use href="images/img_vector/icon.svg#icon-link"></use></svg
+                  >GO_IT
+                </a>
+                <p class="eduParagraph"></p>
+                <datetime class="eduMenu__dateTwo">09.2012 - 04.2016</datetime>
+                <p class="eduMenu__textTwo">
+                  Zespół Szkół Agro-Technicznych <br />
+                  im. W. Witosa Kierunek:Technik Informatyk
+                </p>
+                <svg class="eduMenu__icon" width="20" height="20">
+                  <use href="images/img_vector/icon.svg#icon-map"></use>
+                </svg>
+                <span class="eduMenu__icon-text">Ropczyce</span>
+                <a class="eduMenu__linkTwo" href="http://www.zsat-ropczyce.pl/">
+                  <svg class="eduMenu__link-iconTwo" width="14" height="14">
+                    <use href="images/img_vector/icon.svg#icon-link"></use></svg
+                  >www.zsat-ropczyce.pl
+                </a>
+              </div>
             </div>
           </div>
           <p class="nav__title">Employment<br />history</p>
           <div class="nav__line nav__line--info"></div>
-          <button class="navEmployment__button" data-menu-open>
+          <button class="navEmployment__button" data-navEmployment-open>
             <svg width="20px" height="20px">
               <use href="images/img_vector/icon.svg#icon-arrow"></use>
             </svg>
           </button>
-          <div class="nav__backdrop is-hidden-menu" data-menu>
-            <div class="okno-menu">
-              <button class="okno-menu__button-close" data-menu-close>
+          <div class="nav__backdrop is-hidden-navEmployment" data-navEmployment>
+            <div class="okno">
+              <button class="okno__button-close" data-navEmployment-close>
                 <svg width="20px" height="20px">
                   <use href="images/img_vector/icon.svg#icon-button"></use>
                 </svg>
               </button>
+              <ul class="professionMenu">
+                <li class="professionMenu__list">
+                  <datetime class="professionMenu__date">June 2020 – Now</datetime>
+                  <p class="professionMenu__text">
+                    Freelancer in the position: FRONTEND DEVELOPER
+                  </p>
+                </li>
+                <li class="professionMenu__list">
+                  <datetime class="professionMenu__date"
+                    >July 2018 – May 2020</datetime
+                  >
+                  <p class="professionMenu__text professionMenu__text--two">
+                    Work in Hutchinson Poland Sp. z o.o.<br />
+                    in the position: Operator Maszyn Produkcyjnych.
+                  </p>
+                  <svg class="professionMenu__icon" width="20" height="20">
+                    <use href="images/img_vector/icon.svg#icon-map"></use>
+                  </svg>
+                  <span class="professionMenu__icon-text">Dębica</span>
+                  <a
+                    class="professionMenu__link"
+                    href="https://www.hutchinson.com/pl/debica"
+                  >
+                    <svg class="professionMenu__link-icon" width="14" height="14">
+                      <use
+                        href="images/img_vector/icon.svg#icon-link"
+                      ></use></svg
+                    >Hutchinson
+                  </a>
+                </li>
+                <li class="professionMenu__list">
+                  <datetime class="professionMenu__date"
+                    >May 2017 – October 2017</datetime
+                  >
+                  <p class="professionMenu__text professionMenu__text--two">
+                    professional internship in FLASH Łukasz Mędrek.<br />
+                    in the position: Grafik komputerowy.
+                  </p>
+                  <svg
+                    class="professionMenu__icon professionMenu__icon--three"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="images/img_vector/icon.svg#icon-map"></use>
+                  </svg>
+                  <span class="professionMenu__icon-text">Dębica</span>
+                  <a class="professionMenu__link" href="https://eplakaty.pl/">
+                    <svg class="professionMenu__link-icon" width="14" height="14">
+                      <use
+                        href="images/img_vector/icon.svg#icon-link"
+                      ></use></svg
+                    >Flash
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
           <p class="nav__title nav__title--info">Additional<br />information</p>
-          <button class="navInfo__button" data-menu-open>
+          <button class="navInfo__button" data-navInfo-open>
             <svg width="20px" height="20px">
               <use href="images/img_vector/icon.svg#icon-arrow"></use>
             </svg>
           </button>
-          <div class="nav__backdrop is-hidden-menu" data-menu>
-            <div class="okno-menu">
-              <button class="okno-menu__button-close" data-menu-close>
+          <div class="nav__backdrop is-hidden-navInfo" data-navInfo>
+            <div class="okno">
+              <button class="okno__button-close" data-navInfo-close>
                 <svg width="20px" height="20px">
                   <use href="images/img_vector/icon.svg#icon-button"></use>
                 </svg>
               </button>
+              <ul class="infoMenu">
+            <li class="infoMenu__list">
+              Course:
+              <ul class="infoMenu-course">
+                <li class="infoMenu-course__list">
+                  <datetime class="infoMenu-course__date"
+                    >April 2018 - July 2018</datetime
+                  >
+                  <p class="infoMenu-course__span">Computer Graphics</p>
+                  <svg class="infoMenu-course__icon" width="20" height="20">
+                    <use href="images/img_vector/icon.svg#icon-map"></use>
+                  </svg>
+                  <span class="infoMenu-course__icon-span">Dębica</span>
+                  <a
+                    class="infoMenu-course__link infoMenu-course__link--two"
+                    href="https://goit.global/pl/"
+                  >
+                    <svg class="infoMenu-course__link-icon" width="14" height="14">
+                      <use
+                        href="images/img_vector/icon.svg#icon-link"
+                      ></use></svg
+                    >SIGMA
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="infoMenu">
+            <li class="infoMenu__list">
+              Another:
+              <ul class="infoMenu-other">
+                <li class="infoMenu-other__list">
+                  2 years of experience in website design (HTML/CSS)
+                </li>
+                <li class="infoMenu-other__list">
+                  2 years of experience in computer graphics (ADOBE-PHOTOSHOP)
+                </li>
+                <li class="infoMenu-other__list">Driving license category(B)</li>
+              </ul>
+            </li>
+          </ul>
+          <!-- <ul class="infoMenu">
+            <li class="infoMenu__list infoMenu__list--skills">
+              Soft skills:
+              <ul class="infoMenu-skills">
+                <li class="infoMenu-skills__list">Attention to details</li>
+                <li class="infoMenu-skills__list">Problem solving skills</li>
+                <li class="infoMenu-skills__list">Ability to work independently</li>
+                <li class="infoMenu-skills__list">
+                  Ability to learn and master new systems
+                </li>
+                <li class="infoMenu-skills__list">Can either work in a group</li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="infoMenu">
+            <li class="infoMenu__list infoMenu__list--hobby">
+              Tech skills:
+              <ul class="infoMenu-hobby">
+                <li class="infoMenu-hobby__list">
+                  HTML & CSS (BEM, Scss, flexbox, mobile first)
+                </li>
+                <li class="infoMenu-hobby__list">VS Code</li>
+                <li class="infoMenu-hobby__list">GitHub, npm</li>
+                <li class="infoMenu-hobby__list">JavaScript</li>
+                <li class="infoMenu-hobby__list">React.js</li>
+                <li class="infoMenu-hobby__list">IT, Photography</li>
+              </ul>
+            </li>
+          </ul> -->
             </div>
           </div>
+          <!-- !!! MENU @MEDIA(320px) KONIEC !!! -->
+
           <a class="nav__link" href="./Curriculum Vitae.pdf" download
             >Download Resume</a
           >
@@ -191,7 +362,7 @@
               <use href="images/img_vector/icon.svg#icon-map"></use>
             </svg>
             <span class="edu__icon-text">Ropczyce</span>
-            <a class="edu__link" href="http://www.zsat-ropczyce.pl/">
+            <a class="edu__link" href="https://goit.global/pl/">
               <svg class="edu__link-icon" width="14" height="14">
                 <use href="images/img_vector/icon.svg#icon-link"></use></svg
               >GO_IT
@@ -200,7 +371,7 @@
               Zespół Szkół Agro-Technicznych im. W. Witosa<br />
               Kierunek:Technik Informatyk
             </p>
-            <a class="edu__linkTwo" href="https://goit.global/pl/">
+            <a class="edu__linkTwo" href="http://www.zsat-ropczyce.pl/">
               <svg class="edu__link-iconTwo" width="14" height="14">
                 <use href="images/img_vector/icon.svg#icon-link"></use></svg
               >www.zsat-ropczyce.pl
@@ -262,7 +433,6 @@
           </ul>
         </div>
       </section>
-
       <section class="background-info">
         <div class="container">
           <ul class="info">
@@ -349,6 +519,9 @@
         </span>
       </p>
     </footer>
-    <script src="javascript/menu.js"></script>
+    <script src="javascript/nav.js"></script>
+    <script src="javascript/navEdu.js"></script>
+    <script src="javascript/navEmployment.js"></script>
+    <script src="javascript/navInfo.js"></script>
   </body>
 </html>

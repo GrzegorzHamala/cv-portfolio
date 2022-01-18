@@ -52,7 +52,10 @@
   transform: scale(1);
 }
 
-.is-hidden-menu {
+.is-hidden-nav,
+.is-hidden-navEdu,
+.is-hidden-navEmployment,
+.is-hidden-navInfo {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -61,17 +64,21 @@
   transform: scale(0.1);
 }
 
-.okno-menu {
+.okno {
   background-color: map-get($colors, "block_2");
   border-radius: 4px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
   flex-direction: column;
-  height: 320px;
+  padding-bottom: 30px;
+  width: 320px;
 }
 
-.is-hidden-menu .okno-menu {
+.is-hidden-nav .okno,
+.is-hidden-navEdu .okno,
+.is-hidden-navEmployment .okno,
+.is-hidden-navInfo .okno {
   clip-path: polygon(
     20% 0%,
     0% 20%,
@@ -88,7 +95,7 @@
   );
 }
 
-.okno-menu__button-close {
+.okno__button-close {
   width: 30px;
   height: 30px;
   background-color: map-get($colors, "block_2");
@@ -110,11 +117,8 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .background-nav {
     background-color: map-get($colors, "block");
-    width: 320px;
+    width: 100%;
     height: 800px;
-    float: left;
-    margin-top: -30px;
-    margin-bottom: -100px;
 
     .nav__line--profession,
     .nav__line--info {
@@ -128,7 +132,7 @@
   .navEmployment__button,
   .navInfo__button {
     display: flex;
-    margin: -20px 0 20px 265px;
+    margin: -20px 0 20px 260px;
     width: 45px;
     background-color: transparent;
     fill: #ffffff;
@@ -141,7 +145,7 @@
   }
 
   .navInfo__button {
-    margin-top: -600px;
+    margin-top: -40px;
   }
 
   .title {

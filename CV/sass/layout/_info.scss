@@ -27,7 +27,8 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .info__list{
+  .info__list,
+  .info{
     display: none;
   }
 }
