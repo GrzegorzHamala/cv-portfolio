@@ -1,10 +1,14 @@
 @import "../utils/veriables";
 
-.info__list {
+.info__list,
+.infoMenu__list,
+.infoMenuTwo__list,
+.infoMenuThree__list,
+.infoMenuFour__list {
   font-family: map-get($fonts, "first");
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1;
   letter-spacing: 0.05em;
   color: map-get($colors, "block");
@@ -16,46 +20,81 @@
   font-weight: 500;
   font-size: 16px;
   margin-top: 20px;
+}
 
-  .info-course__date {
-    font-family: none;
-    font-weight: 600;
-    font-size: 20px;
-    color: map-get($colors, "date");
+.info-course__date,
+.infoMenu-course__date {
+  font-family: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: map-get($colors, "date");
+}
+
+.info-course__span {
+  margin-left: 255px;
+  margin-top: -30px;
+  margin-bottom: 8px;
+}
+
+.info-course__link {
+  @extend .info-course__list;
+  color: map-get($colors, "block");
+  text-decoration: none;
+  margin-left: 340px;
+
+  &:hover {
+    color: map-get($colors, "hover");
+    fill: map-get($colors, "hover");
   }
 
-  .info-course__span {
-    margin-left: 255px;
-    margin-top: -30px;
-    margin-bottom: 8px;
+  .info-course__link-icon {
+    margin-right: 5px;
+  }
+}
+
+.info-course__icon {
+  margin-left: 255px;
+}
+
+.info-course__icon-span {
+  text-transform: uppercase;
+  color: map-get($colors, "block");
+}
+
+.info-course__link--two {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .infoMenu__list {
+    margin-top: -20px;
+    margin-left: -280px;
   }
 
-  .info-course__link {
-    @extend .info-course__list;
+  .infoMenuThree__list {
+    margin-top: -20px;
+  }
+
+  .infoMenu-course__span {
+    margin-left: 15px;
+  }
+
+  .infoMenu-course__icon {
+    margin-left: 30px;
+  }
+
+  .infoMenu-course__link {
     color: map-get($colors, "block");
     text-decoration: none;
-    margin-left: 340px;
+    margin-left: 10px;
 
     &:hover {
       color: map-get($colors, "hover");
       fill: map-get($colors, "hover");
     }
 
-    .info-course__link-icon {
+    .infoMenu-course__link-icon {
       margin-right: 5px;
     }
-  }
-
-  .info-course__icon {
-    margin-left: 255px;
-  }
-
-  .info-course__icon-span {
-    text-transform: uppercase;
-    color: map-get($colors, "block");
-  }
-
-  .info-course__link--two {
-    margin-left: 10px;
   }
 }

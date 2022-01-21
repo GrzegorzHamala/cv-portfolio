@@ -4,22 +4,22 @@
   background-color: map-get($colors, "block");
   width: 230px;
   float: left;
+}
 
-  .nav__line {
-    height: 2px;
-    width: 100%;
-    background-color: map-get($colors, "first");
-  }
+.nav__line {
+  height: 2px;
+  width: 100%;
+  background-color: map-get($colors, "first");
+}
 
-  .nav__line--profession {
-    @extend .nav__line;
-    margin-top: 129px;
-  }
+.nav__line--profession {
+  @extend .nav__line;
+  margin-top: 129px;
+}
 
-  .nav__line--info {
-    @extend .nav__line;
-    margin-top: 161px;
-  }
+.nav__line--info {
+  @extend .nav__line;
+  margin-top: 161px;
 }
 
 .title {
@@ -55,7 +55,8 @@
 .is-hidden-nav,
 .is-hidden-navEdu,
 .is-hidden-navEmployment,
-.is-hidden-navInfo {
+.is-hidden-navInfo,
+.is-hidden-navInfoTwo {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -78,7 +79,8 @@
 .is-hidden-nav .okno,
 .is-hidden-navEdu .okno,
 .is-hidden-navEmployment .okno,
-.is-hidden-navInfo .okno {
+.is-hidden-navInfo .okno,
+.is-hidden-navInfoTwo .okno {
   clip-path: polygon(
     20% 0%,
     0% 20%,
@@ -122,7 +124,6 @@
 
     .nav__line--profession,
     .nav__line--info {
-      @extend .nav__line;
       margin-top: 50px;
     }
   }
@@ -130,13 +131,19 @@
   .nav__button,
   .navEdu__button,
   .navEmployment__button,
-  .navInfo__button {
+  .navInfo__button,
+  .navInfoTwo__button {
     display: flex;
     margin: -20px 0 20px 260px;
     width: 45px;
     background-color: transparent;
     fill: #ffffff;
     border: 1px solid #ffffff;
+
+    &:hover {
+      fill: #00ff00;
+      border: 2px solid #00ff00;
+    }
   }
 
   .navEdu__button,
@@ -146,6 +153,11 @@
 
   .navInfo__button {
     margin-top: -40px;
+    margin-left: 210px;
+  }
+
+  .navInfoTwo__button {
+    margin-top: -44px;
   }
 
   .title {
@@ -157,8 +169,17 @@
   .nav__button,
   .navEdu__button,
   .navEmployment__button,
-  .navInfo__button {
+  .navInfo__button,
+  .navInfoTwo__button {
     display: none;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .nav__line--info {
+    margin-top: 195px;
   }
 }
 
@@ -166,7 +187,8 @@
   .nav__button,
   .navEdu__button,
   .navEmployment__button,
-  .navInfo__button {
+  .navInfo__button,
+  .navInfoTwo__button {
     display: none;
   }
 }

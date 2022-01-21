@@ -24,7 +24,8 @@
   text-transform: capitalize;
 }
 
-.profession__text--two {
+.profession__text--two,
+.profession__text--three {
   text-align: center;
   margin-left: 50px;
   margin-top: -15px;
@@ -95,7 +96,58 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-}
+  .profession__date {
+    margin-left: -5px;
+  }
 
-@media screen and (min-width: 1200px) {
+  .profession__date--one {
+    margin-top: -20px;
+  }
+
+  .profession__text--one {
+    margin-left: 28px;
+    margin-top: 8px;
+    width: 250px;
+    text-align: center;
+  }
+  .profession__text--two {
+    width: 300px;
+    margin-left: 10px;
+  }
+
+  .profession__text--three{
+    width: 295px;
+    margin-left: -15px;
+    margin-top: -33px;
+  }
+
+  .profession__icon--one {
+    margin-top: 35px;
+    margin-right: 10px;
+    margin-left: -265px;
+  }
+
+  .profession__icon--three{
+    margin-top: 25px;
+    margin-left: -270px;
+  }
+
+  .profession__icon-text {
+    margin-top: 42px;
+  }
+
+  .profession__icon-text--two{
+    margin-top: 30px;
+    margin-left: 5px;
+  }
+
+  .profession__link-icon {
+    margin-top: 18px;
+    margin-left: 55px;
+  }
+
+  .profession__link-icon--two{
+    margin-top: 5px;
+    margin-left: 60px;
+  }
 }

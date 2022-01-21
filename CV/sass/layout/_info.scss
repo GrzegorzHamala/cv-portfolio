@@ -12,7 +12,7 @@
   .info-lang,
   .info-other,
   .info-skills,
-  .info-hobby{
+  .info-hobby {
     display: flex;
     flex-direction: column;
     list-style: disc;
@@ -28,15 +28,32 @@
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .info__list,
-  .info{
+  .info {
     display: none;
   }
-}
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .infoMenu-course,
+  .infoMenu-other,
+  .infoMenu-skills,
+  .infoMenu-hobby {
+    display: flex;
+    flex-direction: column;
+    list-style: disc;
+    margin-top: 15px;
+    margin-left: -20px;
+  }
 
-}
+  .infoMenu-other,
+  .infoMenu-skills,
+  .infoMenu-hobby{
+    margin-top: 5px;
+  }
 
-@media screen and (min-width: 1200px) {
-  
+  .infoMenu,
+  .infoMenuTwo,
+  .infoMenuThree,
+  .infoMenuFour {
+    display: flex;
+    list-style: square;
+  }
 }

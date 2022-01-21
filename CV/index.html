@@ -22,7 +22,7 @@
         <div class="nav">
           <img class="nav__img" src="images/img/myImg.jpg" alt="Image Person" />
 
-      <!--!!! MENU @MEDIA(320px) !!!-->
+          <!--!!! MENU @MEDIA(320px) !!!-->
           <button class="nav__button" data-nav-open>
             <svg width="20px" height="20px">
               <use href="images/img_vector/icon.svg#icon-arrow"></use>
@@ -155,7 +155,9 @@
               </button>
               <ul class="professionMenu">
                 <li class="professionMenu__list">
-                  <datetime class="professionMenu__date">June 2020 – Now</datetime>
+                  <datetime class="professionMenu__date"
+                    >June 2020 – Now</datetime
+                  >
                   <p class="professionMenu__text">
                     Freelancer in the position: FRONTEND DEVELOPER
                   </p>
@@ -176,7 +178,11 @@
                     class="professionMenu__link"
                     href="https://www.hutchinson.com/pl/debica"
                   >
-                    <svg class="professionMenu__link-icon" width="14" height="14">
+                    <svg
+                      class="professionMenu__link-icon"
+                      width="14"
+                      height="14"
+                    >
                       <use
                         href="images/img_vector/icon.svg#icon-link"
                       ></use></svg
@@ -200,7 +206,11 @@
                   </svg>
                   <span class="professionMenu__icon-text">Dębica</span>
                   <a class="professionMenu__link" href="https://eplakaty.pl/">
-                    <svg class="professionMenu__link-icon" width="14" height="14">
+                    <svg
+                      class="professionMenu__link-icon"
+                      width="14"
+                      height="14"
+                    >
                       <use
                         href="images/img_vector/icon.svg#icon-link"
                       ></use></svg
@@ -224,48 +234,69 @@
                 </svg>
               </button>
               <ul class="infoMenu">
-            <li class="infoMenu__list">
-              Course:
-              <ul class="infoMenu-course">
-                <li class="infoMenu-course__list">
-                  <datetime class="infoMenu-course__date"
-                    >April 2018 - July 2018</datetime
-                  >
-                  <p class="infoMenu-course__span">Computer Graphics</p>
-                  <svg class="infoMenu-course__icon" width="20" height="20">
-                    <use href="images/img_vector/icon.svg#icon-map"></use>
-                  </svg>
-                  <span class="infoMenu-course__icon-span">Dębica</span>
-                  <a
-                    class="infoMenu-course__link infoMenu-course__link--two"
-                    href="https://goit.global/pl/"
-                  >
-                    <svg class="infoMenu-course__link-icon" width="14" height="14">
-                      <use
-                        href="images/img_vector/icon.svg#icon-link"
-                      ></use></svg
-                    >SIGMA
-                  </a>
+                <li class="infoMenu__list">
+                  Course:
+                  <ul class="infoMenu-course">
+                    <li class="infoMenu-course__list">
+                      <datetime class="infoMenu-course__date"
+                        >April 2018 - July 2018</datetime
+                      >
+                      <p class="infoMenu-course__span">Computer Graphics</p>
+                      <svg class="infoMenu-course__icon" width="20" height="20">
+                        <use href="images/img_vector/icon.svg#icon-map"></use>
+                      </svg>
+                      <span class="infoMenu-course__icon-span">Dębica</span>
+                      <a
+                        class="infoMenu-course__link infoMenu-course__link--two"
+                        href="https://goit.global/pl/"
+                      >
+                        <svg
+                          class="infoMenu-course__link-icon"
+                          width="14"
+                          height="14"
+                        >
+                          <use
+                            href="images/img_vector/icon.svg#icon-link"
+                          ></use></svg
+                        >SIGMA
+                      </a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
-            </li>
-          </ul>
-          <ul class="infoMenu">
-            <li class="infoMenu__list">
-              Another:
-              <ul class="infoMenu-other">
-                <li class="infoMenu-other__list">
-                  2 years of experience in website design (HTML/CSS)
+              <ul class="infoMenuTwo">
+                <li class="infoMenuTwo__list">
+                  Another:
+                  <ul class="infoMenu-other">
+                    <li class="infoMenu-other__list">
+                      2 years of experience in website design (HTML/CSS)
+                    </li>
+                    <li class="infoMenu-other__list">
+                      2 years of experience in computer graphics
+                      (ADOBE-PHOTOSHOP)
+                    </li>
+                    <li class="infoMenu-other__list">
+                      Driving license category(B)
+                    </li>
+                  </ul>
                 </li>
-                <li class="infoMenu-other__list">
-                  2 years of experience in computer graphics (ADOBE-PHOTOSHOP)
-                </li>
-                <li class="infoMenu-other__list">Driving license category(B)</li>
               </ul>
-            </li>
-          </ul>
-          <!-- <ul class="infoMenu">
-            <li class="infoMenu__list infoMenu__list--skills">
+            </div>
+          </div>
+          <button class="navInfoTwo__button" data-navInfoTwo-open>
+            <svg width="20px" height="20px">
+              <use href="images/img_vector/icon.svg#icon-arrow"></use>
+            </svg>
+          </button>
+          <div class="nav__backdrop is-hidden-navInfoTwo" data-navInfoTwo>
+            <div class="okno">
+              <button class="okno__button-close" data-navInfoTwo-close>
+                <svg width="20px" height="20px">
+                  <use href="images/img_vector/icon.svg#icon-button"></use>
+                </svg>
+              </button>
+              <ul class="infoMenuThree">
+            <li class="infoMenuThree__list infoMenuThree__list--skills">
               Soft skills:
               <ul class="infoMenu-skills">
                 <li class="infoMenu-skills__list">Attention to details</li>
@@ -278,8 +309,8 @@
               </ul>
             </li>
           </ul>
-          <ul class="infoMenu">
-            <li class="infoMenu__list infoMenu__list--hobby">
+          <ul class="infoMenuFour">
+            <li class="infoMenuFour__list infoMenuFour__list--hobby">
               Tech skills:
               <ul class="infoMenu-hobby">
                 <li class="infoMenu-hobby__list">
@@ -292,7 +323,7 @@
                 <li class="infoMenu-hobby__list">IT, Photography</li>
               </ul>
             </li>
-          </ul> -->
+          </ul>
             </div>
           </div>
           <!-- !!! MENU @MEDIA(320px) KONIEC !!! -->
@@ -385,7 +416,7 @@
           <ul class="profession">
             <li class="profession__list">
               <datetime class="profession__date">June 2020 – Now</datetime>
-              <p class="profession__text">
+              <p class="profession__text profession__text--one">
                 Freelancer in the position: FRONTEND DEVELOPER
               </p>
             </li>
@@ -395,7 +426,7 @@
                 Work in Hutchinson Poland Sp. z o.o.<br />
                 in the position: Operator Maszyn Produkcyjnych.
               </p>
-              <svg class="profession__icon" width="20" height="20">
+              <svg class="profession__icon profession__icon--one" width="20" height="20">
                 <use href="images/img_vector/icon.svg#icon-map"></use>
               </svg>
               <span class="profession__icon-text">Dębica</span>
@@ -409,10 +440,10 @@
               </a>
             </li>
             <li class="profession__list">
-              <datetime class="profession__date"
+              <datetime class="profession__date profession__date--one"
                 >May 2017 – October 2017</datetime
               >
-              <p class="profession__text profession__text--two">
+              <p class="profession__text profession__text--three">
                 professional internship in FLASH Łukasz Mędrek.<br />
                 in the position: Grafik komputerowy.
               </p>
@@ -423,9 +454,9 @@
               >
                 <use href="images/img_vector/icon.svg#icon-map"></use>
               </svg>
-              <span class="profession__icon-text">Dębica</span>
+              <span class="profession__icon-text profession__icon-text--two">Dębica</span>
               <a class="profession__link" href="https://eplakaty.pl/">
-                <svg class="profession__link-icon" width="14" height="14">
+                <svg class="profession__link-icon profession__link-icon--two" width="14" height="14">
                   <use href="images/img_vector/icon.svg#icon-link"></use></svg
                 >Flash
               </a>
@@ -513,7 +544,7 @@
         &copy;
         <span class="footer-text"
           >Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb
-          niezbędnych do realizacji procesu rekrutacji<br />
+          niezbędnych do realizacji procesu rekrutacji
           (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych;
           tekst jednolity: Dz. U. z 2002r. Nr 101, poz. 926 ze zm.)
         </span>
@@ -523,5 +554,6 @@
     <script src="javascript/navEdu.js"></script>
     <script src="javascript/navEmployment.js"></script>
     <script src="javascript/navInfo.js"></script>
+    <script src="javascript/navInfoTwo.js"></script>
   </body>
 </html>

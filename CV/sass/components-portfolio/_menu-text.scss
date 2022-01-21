@@ -1,6 +1,7 @@
 @import "../utils/veriables";
 
-.menu__text {
+.menu__text,
+.menuMin__text {
   font-family: map-get($fonts, "primary");
   font-style: normal;
   font-weight: 500;
@@ -28,4 +29,38 @@
   font-size: 16px;
   text-transform: none;
   margin-left: 50px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .menu__text {
+    display: none;
+  }
+
+  .menuMin__text {
+    margin-left: 25px;
+    font-size: 30px;
+  }
+
+  .menu__link {
+    margin-left: 50px;
+    display: block;
+  }
+
+  .menu__link-two {
+    text-transform: none;
+    margin-left: 50px;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menuMin__text {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menuMin__text {
+    display: none;
+  }
 }

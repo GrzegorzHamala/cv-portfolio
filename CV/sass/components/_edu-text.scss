@@ -134,13 +134,18 @@
     margin-left: 20px;
   }
 
-  .eduParagraph{
+  .eduParagraph {
     margin-top: 30px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-}
+  .edu__date {
+    margin-right: -100px;
+  }
 
-@media screen and (min-width: 1200px) {
+   .edu__dateTwo {
+    margin-left: -40px;
+    margin-right: -90px;
+  }
 }

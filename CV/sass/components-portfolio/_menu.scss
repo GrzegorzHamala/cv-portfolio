@@ -1,0 +1,24 @@
+@import "../utils/veriables";
+
+.menu {
+  height: 80px;
+  border-bottom: 1px solid map-get($colors, "primary");
+  display: flex;
+  align-items: center;
+}
+
+.menu__icon {
+  margin-left: 50px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .menu__icon {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+}
+
+@media screen and (min-width: 1200px) {
+}

@@ -5,7 +5,7 @@
   height: 230px;
   display: flex;
 
-  .profession{
+  .profession {
     list-style: none;
     margin-left: -20px;
   }
@@ -18,24 +18,22 @@
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .profession,
-  .backgronud-profession{
+  .backgronud-profession {
     display: none;
   }
 
-  .professionMenu{
+  .professionMenu {
     list-style: none;
     margin: -12px 0 0 -20px;
   }
 
-  .professionMenu__list{
+  .professionMenu__list {
     margin-top: 20px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-
-}
-
-@media screen and (min-width: 1200px) {
-  
+  .backgronud-profession {
+    height: 260px;
+  }
 }

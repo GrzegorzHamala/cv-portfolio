@@ -86,9 +86,7 @@
   }
 
   .nav__link {
-    position: absolute;
-    bottom: -250px;
-    left: 30px;
+    margin: 0 auto;
   }
 
   .nav__title--info {
@@ -106,9 +104,7 @@
   }
 
   .nav__link {
-    position: absolute;
-    bottom: -720px;
-    left: 20px;
+    margin: -80px auto 20px;
   }
 }
 

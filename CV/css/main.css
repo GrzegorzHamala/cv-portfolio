@@ -141,9 +141,7 @@ body {
   }
 
   .nav__link {
-    position: absolute;
-    bottom: -250px;
-    left: 30px;
+    margin: 0 auto;
   }
 
   .nav__title--info {
@@ -160,9 +158,7 @@ body {
   }
 
   .nav__link {
-    position: absolute;
-    bottom: -720px;
-    left: 20px;
+    margin: -80px auto 20px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -180,7 +176,7 @@ body {
     left: 20px;
   }
 }
-.hero-address, .hero-tel, .hero-mail, .hero-tel .hero-address__span, .hero-mail .hero-address__span, .hero-tel .hero-tel__link, .hero-mail .hero-tel__link, .hero-mail .hero-mail__link, .hero-address .hero-address__span {
+.hero-address, .hero-tel, .hero-mail, .hero-address__span, .hero-tel__link, .hero-mail__link {
   font-family: "roboto";
   font-style: normal;
   font-weight: 700;
@@ -191,28 +187,32 @@ body {
   margin-top: 20px;
   margin-left: 20px;
 }
-.hero-address .hero-address__span, .hero-tel .hero-address__span, .hero-mail .hero-address__span, .hero-tel .hero-tel__link, .hero-mail .hero-tel__link, .hero-mail .hero-mail__link {
+
+.hero-address__span, .hero-tel__link, .hero-mail__link {
   font-style: italic;
   font-weight: 400;
   font-size: 16px;
   margin-left: 10px;
 }
-.hero-address .hero-address__icon, .hero-tel .hero-address__icon, .hero-mail .hero-address__icon {
+
+.hero-address__icon {
   margin-left: 210px;
 }
 
 .hero-tel, .hero-mail {
   margin-top: 5px;
 }
-.hero-tel .hero-tel__icon, .hero-mail .hero-tel__icon {
+
+.hero-tel__icon {
   margin-left: 195px;
   margin-right: 10px;
 }
-.hero-tel .hero-tel__link, .hero-mail .hero-tel__link, .hero-mail .hero-mail__link {
+
+.hero-tel__link, .hero-mail__link {
   font-style: normal;
   text-decoration: none;
 }
-.hero-tel .hero-tel__link:hover, .hero-mail .hero-tel__link:hover, .hero-mail .hero-mail__link:hover {
+.hero-tel__link:hover, .hero-mail__link:hover {
   font-weight: 700;
   font-size: 18px;
   color: #fc6600;
@@ -222,15 +222,17 @@ body {
 .hero-mail {
   margin-top: -10px;
 }
-.hero-mail .hero-mail__icon {
+
+.hero-mail__icon {
   margin-left: 195px;
   margin-right: 10px;
 }
-.hero-mail .hero-mail__link {
+
+.hero-mail__link {
   font-style: normal;
   text-decoration: none;
 }
-.hero-mail .hero-mail__link:hover {
+.hero-mail__link:hover {
   font-weight: 700;
   font-size: 18px;
   color: #fc6600;
@@ -291,6 +293,16 @@ body {
     font-size: 18px;
     color: #fc6600;
     fill: #fc6600;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-address__icon {
+    margin-left: 150px;
+  }
+
+  .hero-tel__icon,
+.hero-mail__icon {
+    margin-left: 135px;
   }
 }
 .edu__date,
@@ -433,6 +445,16 @@ body {
     margin-top: 30px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .edu__date {
+    margin-right: -100px;
+  }
+
+  .edu__dateTwo {
+    margin-left: -40px;
+    margin-right: -90px;
+  }
+}
 .profession__date, .profession__text, .profession__link,
 .professionMenu__link, .profession__icon-text,
 .professionMenu__icon-text,
@@ -461,7 +483,8 @@ body {
   text-transform: capitalize;
 }
 
-.profession__text--two {
+.profession__text--two,
+.profession__text--three {
   text-align: center;
   margin-left: 50px;
   margin-top: -15px;
@@ -529,58 +552,163 @@ body {
     margin-left: 50px;
   }
 }
-.info__list, .info-course__list, .info-course__list .info-course__link {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .profession__date, .profession__text,
+.professionMenu__text, .profession__icon-text,
+.professionMenu__icon-text, .profession__link,
+.professionMenu__link {
+    margin-left: -5px;
+  }
+
+  .profession__date--one {
+    margin-top: -20px;
+  }
+
+  .profession__text--one {
+    margin-left: 28px;
+    margin-top: 8px;
+    width: 250px;
+    text-align: center;
+  }
+
+  .profession__text--two {
+    width: 300px;
+    margin-left: 10px;
+  }
+
+  .profession__text--three {
+    width: 295px;
+    margin-left: -15px;
+    margin-top: -33px;
+  }
+
+  .profession__icon--one {
+    margin-top: 35px;
+    margin-right: 10px;
+    margin-left: -265px;
+  }
+
+  .profession__icon--three {
+    margin-top: 25px;
+    margin-left: -270px;
+  }
+
+  .profession__icon-text {
+    margin-top: 42px;
+  }
+
+  .profession__icon-text--two {
+    margin-top: 30px;
+    margin-left: 5px;
+  }
+
+  .profession__link-icon {
+    margin-top: 18px;
+    margin-left: 55px;
+  }
+
+  .profession__link-icon--two {
+    margin-top: 5px;
+    margin-left: 60px;
+  }
+}
+.info__list, .info-course__list, .info-course__link,
+.infoMenu__list,
+.infoMenuTwo__list,
+.infoMenuThree__list,
+.infoMenuFour__list {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1;
   letter-spacing: 0.05em;
   color: #22235c;
 }
 
-.info-course__list, .info-course__list .info-course__link {
+.info-course__list, .info-course__link {
   font-family: "roboto";
   font-weight: 500;
   font-size: 16px;
   margin-top: 20px;
 }
-.info-course__list .info-course__date {
+
+.info-course__date,
+.infoMenu-course__date {
   font-family: none;
   font-weight: 600;
   font-size: 20px;
   color: #234e00;
 }
-.info-course__list .info-course__span {
+
+.info-course__span {
   margin-left: 255px;
   margin-top: -30px;
   margin-bottom: 8px;
 }
-.info-course__list .info-course__link {
+
+.info-course__link {
   color: #22235c;
   text-decoration: none;
   margin-left: 340px;
 }
-.info-course__list .info-course__link:hover {
+.info-course__link:hover {
   color: #fc6600;
   fill: #fc6600;
 }
-.info-course__list .info-course__link .info-course__link-icon {
+.info-course__link .info-course__link-icon {
   margin-right: 5px;
 }
-.info-course__list .info-course__icon {
+
+.info-course__icon {
   margin-left: 255px;
 }
-.info-course__list .info-course__icon-span {
+
+.info-course__icon-span {
   text-transform: uppercase;
   color: #22235c;
 }
-.info-course__list .info-course__link--two {
+
+.info-course__link--two {
   margin-left: 10px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .infoMenu__list {
+    margin-top: -20px;
+    margin-left: -280px;
+  }
+
+  .infoMenuThree__list {
+    margin-top: -20px;
+  }
+
+  .infoMenu-course__span {
+    margin-left: 15px;
+  }
+
+  .infoMenu-course__icon {
+    margin-left: 30px;
+  }
+
+  .infoMenu-course__link {
+    color: #22235c;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  .infoMenu-course__link:hover {
+    color: #fc6600;
+    fill: #fc6600;
+  }
+  .infoMenu-course__link .infoMenu-course__link-icon {
+    margin-right: 5px;
+  }
+}
 .info-other__list, .info-skills__list,
-.info-hobby__list {
+.info-hobby__list,
+.infoMenu-other__list,
+.infoMenu-skills__list,
+.infoMenu-hobby__list {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -596,6 +724,13 @@ body {
   margin-top: 10px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .infoMenu-skills__list,
+.infoMenu-hobby__list {
+    margin-top: 15px;
+    margin-left: -5px;
+  }
+}
 .footer {
   font-family: "roboto";
   font-style: normal;
@@ -606,6 +741,7 @@ body {
   color: #22235c;
   margin-top: 40px;
   margin-left: 10px;
+  width: 865px;
 }
 
 .footer-text {
@@ -620,7 +756,13 @@ body {
     display: none;
   }
 }
-.menu__text, .menu__link-two, .menu__link {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer {
+    width: 750px;
+  }
+}
+.menu__text, .menu__link-two, .menu__link,
+.menuMin__text {
   font-family: "roboto";
   font-style: normal;
   font-weight: 500;
@@ -632,7 +774,8 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-.menu__text:hover, .menu__link-two:hover, .menu__link:hover {
+.menu__text:hover, .menu__link-two:hover, .menu__link:hover,
+.menuMin__text:hover {
   color: #fc6600;
 }
 
@@ -647,6 +790,37 @@ body {
   margin-left: 50px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .menu__text, .menu__link, .menu__link-two {
+    display: none;
+  }
+
+  .menuMin__text {
+    margin-left: 25px;
+    font-size: 30px;
+  }
+
+  .menu__link {
+    margin-left: 50px;
+    display: block;
+  }
+
+  .menu__link-two {
+    text-transform: none;
+    margin-left: 50px;
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menuMin__text {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menuMin__text {
+    display: none;
+  }
+}
 .img {
   display: flex;
   flex-wrap: wrap;
@@ -673,20 +847,39 @@ body {
   margin-left: 10px;
 }
 
+.menu {
+  height: 80px;
+  border-bottom: 1px solid #303030;
+  display: flex;
+  align-items: center;
+}
+
+.menu__icon {
+  margin-left: 50px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .menu__icon {
+    display: none;
+  }
+}
 .background-nav {
   background-color: #22235c;
   width: 230px;
   float: left;
 }
-.background-nav .nav__line, .background-nav .nav__line--info, .background-nav .nav__line--profession {
+
+.nav__line, .nav__line--info, .nav__line--profession {
   height: 2px;
   width: 100%;
   background-color: #696969;
 }
-.background-nav .nav__line--profession {
+
+.nav__line--profession {
   margin-top: 129px;
 }
-.background-nav .nav__line--info {
+
+.nav__line--info {
   margin-top: 161px;
 }
 
@@ -723,7 +916,8 @@ body {
 .is-hidden-nav,
 .is-hidden-navEdu,
 .is-hidden-navEmployment,
-.is-hidden-navInfo {
+.is-hidden-navInfo,
+.is-hidden-navInfoTwo {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -746,7 +940,8 @@ body {
 .is-hidden-nav .okno,
 .is-hidden-navEdu .okno,
 .is-hidden-navEmployment .okno,
-.is-hidden-navInfo .okno {
+.is-hidden-navInfo .okno,
+.is-hidden-navInfoTwo .okno {
   -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
           clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
 }
@@ -782,13 +977,22 @@ body {
   .nav__button,
 .navEdu__button,
 .navEmployment__button,
-.navInfo__button {
+.navInfo__button,
+.navInfoTwo__button {
     display: flex;
     margin: -20px 0 20px 260px;
     width: 45px;
     background-color: transparent;
     fill: #ffffff;
     border: 1px solid #ffffff;
+  }
+  .nav__button:hover,
+.navEdu__button:hover,
+.navEmployment__button:hover,
+.navInfo__button:hover,
+.navInfoTwo__button:hover {
+    fill: #00ff00;
+    border: 2px solid #00ff00;
   }
 
   .navEdu__button,
@@ -798,6 +1002,11 @@ body {
 
   .navInfo__button {
     margin-top: -40px;
+    margin-left: 210px;
+  }
+
+  .navInfoTwo__button {
+    margin-top: -44px;
   }
 
   .title {
@@ -808,15 +1017,25 @@ body {
   .nav__button,
 .navEdu__button,
 .navEmployment__button,
-.navInfo__button {
+.navInfo__button,
+.navInfoTwo__button {
     display: none;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .nav__line--info {
+    margin-top: 195px;
   }
 }
 @media screen and (min-width: 1200px) {
   .nav__button,
 .navEdu__button,
 .navEmployment__button,
-.navInfo__button {
+.navInfo__button,
+.navInfoTwo__button {
     display: none;
   }
 }
@@ -869,7 +1088,8 @@ body {
 .hero-gh {
   margin-left: 175px;
 }
-.hero-gh .hero-gh__icon {
+
+.hero-gh__icon {
   margin-right: 10px;
   margin-top: -4px;
 }
@@ -937,6 +1157,10 @@ body {
     display: flex;
     flex-direction: column;
   }
+
+  .hero-gh {
+    margin-left: 115px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero {
@@ -997,6 +1221,11 @@ body {
     margin-top: 20px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .backgronud-profession {
+    height: 260px;
+  }
+}
 .background-info {
   background-color: #ffffff99;
 }
@@ -1021,17 +1250,33 @@ body {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .info__list, .info-course__list, .info-course__list .info-course__link,
+  .info__list, .info-course__list, .info-course__link,
 .info {
     display: none;
   }
-}
-.menu {
-  height: 80px;
-  border-bottom: 1px solid #303030;
-  display: flex;
-  align-items: center;
-}
-.menu .menu__icon {
-  margin-left: 50px;
+
+  .infoMenu-course,
+.infoMenu-other,
+.infoMenu-skills,
+.infoMenu-hobby {
+    display: flex;
+    flex-direction: column;
+    list-style: disc;
+    margin-top: 15px;
+    margin-left: -20px;
+  }
+
+  .infoMenu-other,
+.infoMenu-skills,
+.infoMenu-hobby {
+    margin-top: 5px;
+  }
+
+  .infoMenu,
+.infoMenuTwo,
+.infoMenuThree,
+.infoMenuFour {
+    display: flex;
+    list-style: square;
+  }
 }/*# sourceMappingURL=main.css.map */

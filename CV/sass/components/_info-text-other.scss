@@ -1,6 +1,9 @@
 @import "../utils/veriables";
 
-.info-other__list {
+.info-other__list,
+.infoMenu-other__list,
+.infoMenu-skills__list,
+.infoMenu-hobby__list  {
   font-family: map-get($fonts, "first");
   font-style: normal;
   font-weight: 600;
@@ -15,4 +18,12 @@
 .info-hobby__list {
   @extend .info-other__list;
   margin-top: 10px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .infoMenu-skills__list,
+  .infoMenu-hobby__list {
+    margin-top: 15px;
+    margin-left: -5px;
+  }
 }

@@ -10,63 +10,63 @@
   color: map-get($colors, "primary");
   margin-top: 20px;
   margin-left: 20px;
+}
 
-  .hero-address__span {
-    @extend .hero-address;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 16px;
-    margin-left: 10px;
-  }
+.hero-address__span {
+  @extend .hero-address;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 10px;
+}
 
-  .hero-address__icon {
-    margin-left: 210px;
-  }
+.hero-address__icon {
+  margin-left: 210px;
 }
 
 .hero-tel {
   @extend .hero-address;
   margin-top: 5px;
+}
 
-  .hero-tel__icon {
-    margin-left: 195px;
-    margin-right: 10px;
-  }
+.hero-tel__icon {
+  margin-left: 195px;
+  margin-right: 10px;
+}
 
-  .hero-tel__link {
-    @extend .hero-address__span;
-    font-style: normal;
-    text-decoration: none;
+.hero-tel__link {
+  @extend .hero-address__span;
+  font-style: normal;
+  text-decoration: none;
 
-    &:hover {
-      font-weight: 700;
-      font-size: 18px;
-      color: map-get($colors, "hover");
-      fill: map-get($colors, "hover");
-    }
+  &:hover {
+    font-weight: 700;
+    font-size: 18px;
+    color: map-get($colors, "hover");
+    fill: map-get($colors, "hover");
   }
 }
 
 .hero-mail {
   @extend .hero-tel;
   margin-top: -10px;
+}
 
-  .hero-mail__icon {
-    margin-left: 195px;
-    margin-right: 10px;
-  }
+.hero-mail__icon {
+  margin-left: 195px;
+  margin-right: 10px;
+}
 
-  .hero-mail__link {
-    @extend .hero-tel__link;
-    font-style: normal;
-    text-decoration: none;
+.hero-mail__link {
+  @extend .hero-tel__link;
+  font-style: normal;
+  text-decoration: none;
 
-    &:hover {
-      font-weight: 700;
-      font-size: 18px;
-      color: map-get($colors, "hover");
-      fill: map-get($colors, "hover");
-    }
+  &:hover {
+    font-weight: 700;
+    font-size: 18px;
+    color: map-get($colors, "hover");
+    fill: map-get($colors, "hover");
   }
 }
 
@@ -141,7 +141,12 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-}
+  .hero-address__icon {
+    margin-left: 150px;
+  }
 
-@media screen and (min-width: 1200px) {
+  .hero-tel__icon,
+  .hero-mail__icon {
+    margin-left: 135px;
+  }
 }
