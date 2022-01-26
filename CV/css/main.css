@@ -761,6 +761,82 @@ body {
     width: 750px;
   }
 }
+.goBack {
+  font-family: "roboto";
+  font-weight: 900;
+  color: #22235c;
+  text-decoration: none;
+  display: flex;
+  margin: 20px 1120px 30px -70px;
+}
+.goBack:hover {
+  color: #fc6600;
+}
+
+.link, .linkOne,
+.linkTwo,
+.linkThree,
+.linkFour {
+  font-family: "roboto";
+  font-weight: 900;
+  font-size: 16px;
+  color: #627bec;
+  text-decoration: none;
+  display: flex;
+  margin: 20px 1050px 30px -50px;
+}
+.link:visited, .linkOne:visited,
+.linkTwo:visited,
+.linkThree:visited,
+.linkFour:visited {
+  color: #234e00;
+}
+.link:hover, .linkOne:hover,
+.linkTwo:hover,
+.linkThree:hover,
+.linkFour:hover {
+  color: #fc6600;
+  box-shadow: 5px 5px 15px #22235c;
+  border: 1px solid #234e00;
+  border-radius: 15px;
+  width: 90px;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  margin-top: -5px;
+}
+
+.linkOne:hover,
+.linkTwo:hover,
+.linkThree:hover,
+.linkFour:hover {
+  width: 195px;
+}
+
+.linkTwo:hover {
+  width: 210px;
+}
+
+.linkThree:hover {
+  width: 230px;
+}
+
+.linkFour:hover {
+  width: 240px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .link, .linkOne,
+.linkTwo,
+.linkThree,
+.linkFour {
+    margin: 20px 100px 20px 30px;
+  }
+
+  .goBack {
+    margin: 10px 100px 20px 15px;
+  }
+}
 .menu__text, .menu__link-two, .menu__link,
 .menuMin__text {
   font-family: "roboto";
@@ -858,6 +934,48 @@ body {
   margin-left: 10px;
 }
 
+.link__pages {
+  font-family: "roboto";
+  font-weight: 600;
+  font-size: 20px;
+  font-style: normal;
+  text-decoration: none;
+  margin-left: 95px;
+  margin-top: -4px;
+  color: #234e00;
+  -webkit-animation: link 5s linear;
+          animation: link 5s linear;
+}
+
+@-webkit-keyframes link {
+  0% {
+    transform: scale(0.1);
+  }
+  30% {
+    transform: scale(3);
+  }
+  70% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes link {
+  0% {
+    transform: scale(0.1);
+  }
+  30% {
+    transform: scale(3);
+  }
+  70% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .img {
     margin: 10px 0 35px 0;
@@ -868,7 +986,11 @@ body {
   }
 
   .img__text {
-    margin: -680px 0 20px 48px;
+    margin: -680px 0 20px 15px;
+  }
+
+  .link__pages {
+    margin-left: 30px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {

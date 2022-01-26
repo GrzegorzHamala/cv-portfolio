@@ -27,6 +27,36 @@
   margin-left: 10px;
 }
 
+.link__pages {
+  font-family: map-get($fonts, "primary");
+  font-weight: 600;
+  font-size: 20px;
+  font-style: normal;
+  text-decoration: none;
+  margin-left: 95px;
+  margin-top: -4px;
+  color: map-get($colors, "date");
+  animation: link 5s linear;
+}
+
+@keyframes link {
+  0% {
+    transform: scale(0.1);
+  }
+
+  30% {
+    transform: scale(3);
+  }
+
+  70% {
+    transform: scale(0.1);
+  }
+
+  100%{
+    transform: scale(1);
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .img {
     margin: 10px 0 35px 0;
@@ -38,7 +68,11 @@
   }
 
   .img__text {
-    margin: -680px 0 20px 48px;
+    margin: -680px 0 20px 15px;
+  }
+
+  .link__pages{
+    margin-left: 30px;
   }
 }
 
